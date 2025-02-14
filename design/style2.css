@@ -78,7 +78,14 @@ section {
     width: 14rem;
     height: 11.5rem;
     margin: 0.5rem 0.3rem;
+    transition: transform 1s ease-in-out;
 }
+
+.one img:hover, .two img:hover, .three img:hover, .four img:hover, .five img:hover, .six img:hover, .seven img:hover, .eight img:hover, .nine img:hover, .ten img:hover, .eleven img:hover, .twelve img:hover {
+    transform: scale(1.05);
+}
+
+
 
 @keyframes main {
     0% {
