@@ -1,0 +1,181 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../images/carl.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.top {
+    background-color: red;
+    text-align: center;
+}
+
+.all-section {
+    position: relative;
+}
+
+.one {
+    background-color: rgb(224, 179, 179);
+    position: absolute;
+    top: 7.5rem;
+    left: 23rem;
+    border-radius: 45% 55% 0% 100% / 33% 35% 65% 67%;
+    width: 25rem;
+    height: 30rem;
+    
+}
+
+.two {
+    background-color:  rgb(152, 152, 231);
+    position: absolute;
+    border-radius: 59% 41% 100% 0% / 33% 35% 65% 67%;
+    top: 7.5rem;
+    right: 23rem;
+    width: 25rem;
+    height: 30rem;
+}
+
+.three {
+    background-color: green;
+    position: absolute;
+    top: 21.5rem;
+    right: 16.5rem;
+    border-radius: 59% 41% 100% 0% / 100% 35% 65% 0%;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.four {
+    background-color: yellow;
+    position: absolute;
+    top: 21.5rem;
+    left: 16.5rem;
+    border-radius: 38% 62% 0% 100% / 32% 100% 0% 68%;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.five {
+    border-radius: 59% 41% 100% 0% / 100% 35% 65% 0%;
+    background-color: yellowgreen;
+    position: absolute;
+    top: 12.8rem;
+    right: 12.7rem;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+    animation: carlAnimation 2s ease infinite alternate;
+}
+
+.six {
+    background-color: orange;
+    position: absolute;
+    top: 12.8rem;
+    left: 12.7rem;
+    border-radius: 38% 62% 0% 100% / 32% 100% 0% 68%;;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.seven {
+    background-color: rgba(226, 55, 55, 0.76);
+    position: absolute;
+    top: 8rem;
+    left: 12.7rem;
+    border-radius: 100% 0% 74% 26% / 76% 0% 100% 24%;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.eight { 
+    background-color: rgba(236, 55, 55, 0.582);
+    position: absolute;
+    top: 8rem;
+    right: 12.7rem;
+    border-radius: 0% 100% 20% 80% / 0% 80% 20% 100%;
+    margin-top: 10px;
+    width: 9rem;
+    height: 9rem;
+}
+
+.nine {  
+    background-color: blueviolet;
+    position: absolute;
+    top: 29.5rem;
+    right: 22rem;
+    border-radius: 90% 10% 85% 15% / 85% 10% 90% 15%;
+    margin-top: 10px;
+    width: 10rem;
+    height: 7rem;
+}
+
+.ten {
+    background-color: purple;
+    position: absolute;
+    top: 29.5rem;
+    left: 22rem;
+    border-radius: 10% 90% 15% 85% / 10% 85% 15% 90%;
+    margin-top: 10px;
+    width: 10rem;
+    height: 7rem;
+}
+
+.submit {
+    position: absolute;
+    top: 18rem;
+    left: 35rem;
+    border: 1px solid #ff0000ad;
+    background-color: #ff0000ad;
+    border-radius: 2rem;
+    width: 26rem;
+    height: 15rem;
+}
+
+.submit input {
+    margin: 5rem 3rem;
+    width: 20rem;
+    height: 3rem;
+    border-radius: 1.5rem;
+    text-align: center;
+}
+
+.submit button {
+    position: absolute;
+    top: 8.5rem;
+    left: 9.4rem;
+    width: 7rem;
+    height: 2rem;
+    border-radius: 2rem;
+}
+
+@keyframes carlAnimation {
+    0% {
+        background: red;
+    }
+
+    25% {
+        background: blue;
+    }
+
+    50% {
+        background: green;
+    }
+
+    75% {
+        background: yellow;
+    }
+
+    100%{
+        background: white;
+    }
+
+}
