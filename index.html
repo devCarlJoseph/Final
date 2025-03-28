@@ -3,9 +3,365 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Log-In Form</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #fc5f0a;
+          --color-secondary: #faf4e6;
+        }
+      </style>
+    <title>...</title>
 </head>
-<body>
-    
+<body class="">
+    <header class="h-[5rem] w-[85%] bg-transparent ml-[8.5rem] flex justify-between items-center border-b-gray-200 border-b-[0.1rem] absolute z-[1]">
+        <div class="flex justify-center items-center text-white gap-2">
+            <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%]">
+                <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+            </div>
+            <div>
+                <h1 class="text-[1.5rem] font-bold">CjCo</h1>
+                <h1 class="text-[0.7rem] text-gray-300">RESTAURANT</h1>
+            </div>
+        </div>
+        <div class="text-white ml-[4rem]">
+            <ul class="flex gap-[2rem] cursor-pointer">
+                <li class="border-b-white border-b-[1px]"><a href="#"></a>Home</li>
+                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Menu</li>
+                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
+                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
+                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
+                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
+            </ul>
+        </div>
+        <div class="bg-transparent h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem]">
+            <button class="p-2.5 text-white pl-[1.7rem]">BOOK A TABLE</button>
+        </div>
+    </header>
+    <section class="relative">
+        <div class="w-[100%] h-screen bg-black opacity-[50%] absolute"></div>
+        <img src="assets/images/main.jpg" class="w-screen h-screen">
+        <div class="absolute top-[15rem] left-[35.2rem]">
+            <div class="w-[50rem] h-[40rem] text-center text-white">
+                <div class="text-white flex justify-center items-center gap-5">
+                    <div class="text-primary">
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                    </div>
+                    <div>
+                        <h1 class="text-[1.5rem] font-sm">KAON NAMO DIRI DI MO HILOAN</h1>
+                    </div>
+                    <div class="text-primary">
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                        <i class="fa-solid fa-diamond"></i>
+                    </div>
+                </div>
+                <div class="mt-[0.5rem]">
+                    <h1 class="text-[4.5rem] font-medium">Lami nga Plato & Memories Naka Ugma</h1>
+                </div>
+                <div class="pl-[5.5rem] pr-[5.5rem] text-[0.95rem] mt-[0.7rem] text-gray-300">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quaerat ipsum ut porro delectus, maxime aperiam sed dolorem, reiciendis sunt quod dolore officiis? Earum, dignissimos neque sapiente nobis id fugiat.</p>
+                </div>
+                <div class="border-1 border-white bg-white/10 backdrop-blur-none mt-[3rem] ml-[20rem] h-[3rem] w-[10rem] rounded-[2rem]">
+                    <button class="text-center p-2.5">VIEW FULL MENU</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="mt-[-6.5rem]">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+        </div>
+        <div class="flex justify-center mt-[5rem] gap-[5rem] h-[40rem]">
+            <div class="relative">
+                <div class="w-[5.5rem] h-[5.5rem] bg-primary rounded-[50%] absolute left-[38rem] z-[1] rotate-[-15deg]">
+                    <h1 class="text-center text-white font-medium mt-[1.2rem]">Since <br> 2005</h1>
+                </div>
+                <div class="w-[5rem] h-[5rem] border-2 border-white rounded-[50%] absolute left-[38.3rem] top-[0.25rem] z-[2]"></div>
+                <img src="assets/images/manager.jpg" class="rounded-[40%] w-[25rem] h-[30rem] ml-[20rem]">
+                <div class="w-[23rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[21rem]"></div>
+                <div class="text-primary">
+                    <i class="fa-solid fa-star-of-life text-[4rem] absolute left-[21.5rem] top-[23.5rem]"></i>
+                    <i class="fa-solid fa-star-of-life text-[2rem] absolute left-[18.5rem] top-[22rem]"></i>
+                    <i class="fa-solid fa-star-of-life absolute left-[19.5rem] top-[26rem]"></i>
+                </div>
+            </div>
+            <div class="w-[40rem] text-justify mr-[20rem]">
+                <div class="text-primary pb-[1.5rem]">
+                    <i class="fa-solid fa-diamond"></i>
+                    <i class="fa-solid fa-diamond"></i>
+                    <i class="fa-solid fa-diamond"></i>
+                </div>
+                <div class="text-primary">
+                    <h1 class="text-[1.1rem] font-medium pb-[1rem]">ABOUT US</h1>
+                </div>
+                <div class="text-[2rem] font-semibold">
+                    <h1>A Culinary Exprience of <br> <span class="text-primary">Elegance and Excellence</span></h1>
+                </div>
+                <div class="pt-[1rem] text-gray-400">
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, magni numquam? Pariatur unde aliquid aspernatur libero ipsam sunt, ratione sint nisi iure repellat inventore tempora autem ab eveniet vitae totam.</p>
+                </div>
+                <div class="flex justify-between items-center pt-[1.5rem]">
+                    <div>
+                        <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary">5-Star</h1>
+                        <p class="text-[0.8rem] text-gray-400 font-medium">Dining Experience</p>
+                    </div>
+                    <div class="border-r-1 border-gray-200 h-[5rem]"></div>
+                    <div>
+                        <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary">150,000+</h1>
+                        <p class="text-[0.8rem] text-gray-400 font-medium">Happy Guests</p>
+                    </div>
+                    <div class="border-r-1 border-gray-200 h-[5rem]"></div>
+                    <div>
+                        <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary">99%</h1>
+                        <p class="text-[0.8rem] text-gray-400 font-medium">Guest Satisfaction</p>
+                    </div>
+                </div>
+                <div class="mt-[1.5rem]">
+                    <h1 class="text-[1.5rem] font-bold">Manang G</h1>
+                    <p class="text-[0.9rem] text-gray-400 font-sm">Manang G <span class="text-primary">•</span> Owner</p>
+                </div>
+            </div>
+        </div>
+        <div class="rotate-[180deg] mb-[-8rem]">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+        </div>
+    </section>
+    <section class="bg-secondary h-[80rem]">
+        <div class="pt-[15rem] text-center text-primary pb-[1rem]">
+            <i class="fa-solid fa-diamond"></i>
+            <i class="fa-solid fa-diamond"></i>
+            <i class="fa-solid fa-diamond"></i> 
+        </div>
+        <div class="text-center text-primary">
+            <h1 class="text-[1.2rem] font-medium pb-[1rem]">FOOD MENU</h1>
+        </div>
+        <div class="text-center font-semibold">
+            <h1 class="text-[2.5rem]">Timeless <span class="text-primary">Culinary Delights</span></h1>
+        </div>
+        <div class="flex justify-between items-center">
+            <div class="w-[14rem] h-[3rem] bg-primary mt-[1.5rem] ml-[35rem] relative">
+                <i class="fa-solid fa-caret-right text-secondary absolute text-[4.9rem] top-[-0.93rem] left-[-1rem]"></i>
+                <h1 class="text-center font-medium text-white mt-[0.7rem]">Starters & Appetizers</h1>
+                <i class="fa-solid fa-caret-left text-secondary absolute text-[4.9rem] top-[-0.93rem] right-[-1rem]"></i>
+            </div>
+            <div class="w-[12rem] h-[3rem] bg-primary mt-[1.5rem] mr-[35rem] relative">
+                <i class="fa-solid fa-caret-right text-secondary absolute text-[4.9rem] top-[-0.93rem] left-[-1rem]"></i>
+                <h1 class="text-center font-medium text-white mt-[0.7rem]">Main Course</h1>
+                <i class="fa-solid fa-caret-left text-secondary absolute text-[4.9rem] top-[-0.93rem] right-[-1rem]"></i>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <div>
+                <div class="flex col items-center gap-3 mt-[4rem] ml-[26rem]">
+                    <img src="assets/images/spiced potato.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div class="">
+                        <h1 class="text-[1.3rem] font-medium">Spicy Potato Wedges <span class="text-gray-500">.......................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] ml-[26rem]">
+                    <img src="assets/images/vegetable spring roll.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div class="">
+                        <h1 class="text-[1.3rem] font-medium">Vegetable Spring Roll <span class="text-gray-500">......................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[4.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Popular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] ml-[26rem]">
+                    <img src="assets/images/garlic bread w cheese.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div class="">
+                        <h1 class="text-[1.3rem] font-medium">Garlic Bread with Cheese <span class="text-gray-500">................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] ml-[26rem]">
+                    <img src="assets/images/greek feta salad.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Greek Feta Salad <span class="text-gray-500">...............................</span> <span class="font-medium text-[1.2rem] text-gray-500 ">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Trending</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] ml-[26rem]">
+                    <img src="assets/images/mozzarella stick.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Mozzarella Sticks <span class="text-gray-500">..............................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[7.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Chef's Special</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="flex col items-center gap-3 mt-[4rem] mr-[26rem]">
+                    <img src="assets/images/pesto zucchini.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Pesto Zucchini Noodles <span class="text-gray-500">..............................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[7.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Chef's Special</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] mr-[26rem]">
+                    <img src="assets/images/pepperoni.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Pepperoni Paradise Pie <span class="text-gray-500">...............................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[5.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Trending</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] mr-[26rem]">
+                    <img src="assets/images/caprese.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Caprese Carnival Crust <span class="text-gray-500">................................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">New</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] mr-[26rem]">
+                    <img src="assets/images/tacos.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Quinoa Tacos <span class="text-gray-500">.................................................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[4.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Popular</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex col items-center gap-3 mt-[1rem] mr-[26rem]">
+                    <img src="assets/images/udon.jpg" class="w-[6rem] h-[6rem] rounded-[50%]">
+                    <div>
+                        <h1 class="text-[1.3rem] font-medium">Udon Noodles <span class="text-gray-500">...............................................</span> <span class="font-medium text-[1.2rem] text-gray-500">$15</span></h1>
+                        <div class="flex justify-between items-center">
+                            <div class="text-gray-400">
+                                <p>Lorem ipsum dolor sit amet</p>
+                            </div>
+                            <div class="w-[5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] cursor-pointer">
+                                <p class="text-center text-primary font-medium">Must Try</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="w-[10rem] h-[3rem] bg-transparent border-1 border-primary rounded-[1rem] mt-[3rem] ml-[45.5%]">
+            <h1 class="text-center mt-[0.6rem] text-primary font-medium cursor-pointer">Browse Full Menu</h1>
+        </div>
+    </section>
+    <section class="h-[60rem]">
+        <div class="mt-[-6rem]">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+        </div>
+        <div class="text-center">
+            <div class="pt-[6rem] text-center text-primary pb-[1rem]">
+                <i class="fa-solid fa-diamond"></i>
+                <i class="fa-solid fa-diamond"></i>
+                <i class="fa-solid fa-diamond"></i> 
+            </div>
+            <div class="text-center text-primary">
+                <h1 class="text-[1.2rem] font-medium pb-[1rem]">SPECIAL OFFERS</h1>
+            </div>
+            <div class="text-center font-semibold">
+                <h1 class="text-[2.5rem]">Exclusive <span class="text-primary">Dining Offers</span></h1>
+            </div>
+        </div>
+        <div class="flex justify-between items-center">
+            <div class="w-[35rem] h-[25rem] bg-secondary mt-[2.5rem] ml-[23.5rem] rounded-[1rem] relative overflow-hidden">
+                <div class="w-[6rem] h-[6rem] bg-primary rounded-[50%] absolute top-[-0.5rem] left-[2rem] rotate-[-10deg]">
+                    <h1 class="text-white text-center text-[1.3rem] font-semibold mt-[1rem]">20%<br><span class="text-[1.2srem] font-sm">Off</span></h1>
+                </div>
+                <div class="w-[5.5rem] h-[5.5rem] border-2 border-white rounded-[50%] absolute top-[-0.2rem] left-[2.25rem] rotate-[-10deg]"></div>
+                <div>
+                    <div class="mt-[8.5rem]">
+                        <div class="border-b-2 border-b-primary w-[11.2rem] absolute ml-[1rem]"></div>
+                        <h1 class="text-[1.2rem] text-primary ml-[1rem]">FLAT 20% DISCOUNT</h1>
+                        <div class="border-b-2 border-b-primary w-[11.2rem] absolute ml-[1rem]"></div>
+                    </div>
+                    <h1 class="text-[2.8rem] ml-[1rem] mt-[0.5rem]">Dine & Save - <br> 20% Off Today!</h1>
+                    <p class="text-gray-500 ml-[1rem] mt-[1rem]">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <div class="w-[9rem] h-[9rem] bg-primary rounded-[50%] opacity-[15%] absolute top-[-2.5rem] left-[18rem]"></div>
+                    <div class="w-[6rem] h-[6rem] bg-primary rounded-[50%] opacity-[15%] absolute top-[22.5rem] left-[2rem]"></div>
+                    <img src="assets/images/special off 1.png" class="w-[22rem] top-[-0.5rem] left-[13rem] absolute">
+                </div>
+            </div>
+            <div class="w-[35rem] h-[25rem] bg-primary mt-[2.5rem] mr-[23.5rem] rounded-[1rem] relative overflow-hidden">
+                <div class="w-[6rem] h-[6rem] bg-white rounded-[50%] absolute top-[-0.5rem] left-[2rem] rotate-[-10deg]">
+                    <h1 class="text-primary text-center text-[1.3rem] font-semibold mt-[1rem]">20%<br><span class="text-[1.2srem] font-sm">Off</span></h1>
+                </div>
+                <div class="w-[5.5rem] h-[5.5rem] border-2 border-primary rounded-[50%] absolute top-[-0.2rem] left-[2.25rem] rotate-[-10deg]"></div>
+                <div>
+                    <div class="mt-[8.5rem]">
+                        <div class="border-b-2 border-b-white w-[11.2rem] absolute ml-[1rem]"></div>
+                        <h1 class="text-[1.2rem] text-white ml-[1rem]">FLAT 20% DISCOUNT</h1>
+                        <div class="border-b-2 border-b-white w-[11.2rem] absolute ml-[1rem]"></div>
+                    </div>
+                    <h1 class="text-[2.8rem] ml-[1rem] mt-[0.5rem] text-white">Dine & Save - <br> 20% Off Today!</h1>
+                    <p class="text-gray-300 ml-[1rem] mt-[1rem]">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <div class="w-[9rem] h-[9rem] bg-secondary rounded-[50%] opacity-[35%] absolute top-[-2.5rem] left-[18rem]"></div>
+                    <div class="w-[6rem] h-[6rem] bg-secondary rounded-[50%] opacity-[35%] absolute top-[22.5rem] left-[2rem]"></div>
+                    <img src="assets/images/special off 2.png" class="w-[22rem] top-[-4.5rem] left-[20.5rem] absolute">
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
