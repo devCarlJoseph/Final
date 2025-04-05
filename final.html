@@ -36,7 +36,10 @@
                         </div>
                    </div>
                    <div class="mt-[1.5rem] mb-[0.7rem]">
-                        <ul class="flex gap-[2rem] cursor-pointer text-white">
+                        <div class="hidden max-lg:block">
+                            <i class="fa-solid fa-bars text-[1.3rem] text-white"></i>
+                        </div>
+                        <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
                             <li class="border-b-white border-b-[1px]"><a href="#"></a>Home</li>
                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Menu</li>
                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
@@ -45,72 +48,76 @@
                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
                         </ul>
                    </div>
-                   <div class="bg-transparent h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem]">
+                   <div class="bg-transparent h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem] max-lg:hidden">
                         <button class="p-2.5 text-white pl-[1.7rem] cursor-pointer">BOOK A TABLE</button>
                    </div>
             </div>
         </header>
         <section>
-            <div class="bg-[url('/assets/images/main.jpg')] bg-cover bg-center h-screen">
-                <div class="text-white flex justify-center items-center gap-5 pt-[17rem]">
-                    <div class="text-primary">
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
+            <div class="w-full overflow-hidden">
+                <div class="bg-[url('/assets/images/main.jpg')] bg-cover bg-center h-screen max-lg:h-[70%] max-sm:h-[55%]">
+                    <div class="text-white flex justify-center items-center gap-5 pt-[17rem] max-2xl:pt-[14rem] max-lg:pt-[10rem] max-lg:gap-3 max-sm:pt-[8rem] max-sm:gap-2">
+                        <div class="text-primary">
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-[1.5rem] font-sm max-2xl:text-[1.2rem] max-lg:text-[1rem] max-sm:text-[0.7rem]">KAON NAMO DIRI DI MO HILOAN</h1>
+                        </div>
+                        <div class="text-primary">
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                        </div>
                     </div>
                     <div>
-                        <h1 class="text-[1.5rem] font-sm">KAON NAMO DIRI DI MO HILOAN</h1>
+                        <div class="mt-[0.5rem] text-center text-white">
+                            <h1 class="text-[4.5rem] font-medium max-2xl:text-[3.5rem] max-xl:text-[2.5rem] max-sm:text-[1.5rem]">Lami nga Plato & <br> Memories Naka Ugma</h1>
+                        </div>
+                        <div class="text-[0.95rem] mt-[0.7rem] text-gray-300 text-center pl-[28%] pr-[28%] max-2xl:pl-[20%] max-2xl:pr-[20%] max-xl:pl-[15%] max-xl:pr-[15%] max-lg:mt-[0.4rem] max-sm:pl-[5%] max-sm:pr-[5%] ">
+                            <p class="text-center max-lg:text-[0.8rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quaerat ipsum ut porro delectus, maxime aperiam sed dolorem, <span class="max-sm:hidden">reiciendis sunt quod dolore officiis? Earum, dignissimos neque sapiente nobis id fugiat.</span></p>
+                        </div>
+                        <div class="border-1 border-white bg-white/10 backdrop-blur-none mt-[2rem] ml-[45.5%] h-[3rem] w-[10rem] rounded-[2rem] hover:bg-white/40 max-2xl:ml-[44.5%] max-xl:ml-[42.5%] max-lg:ml-[39.55%] max-lg:mt-[1.2rem]  max-sm:h-[2rem] max-sm:w-[8rem] max-sm:mt-[0.9rem] max-sm:ml-[33.95%]">
+                            <button class="text-center pt-[0.65rem] pl-[0.9rem] text-white cursor-pointer max-sm:text-[0.8rem] max-sm:pt-[0.3rem]">VIEW FULL MENU</button>
+                        </div>
                     </div>
-                    <div class="text-primary">
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                        <i class="fa-solid fa-diamond"></i>
-                    </div>
                 </div>
-                <div class="mt-[0.5rem] text-center text-white">
-                    <h1 class="text-[4.5rem] font-medium">Lami nga Plato & <br> Memories Naka Ugma</h1>
-                </div>
-                <div class="text-[0.95rem] mt-[0.7rem] text-gray-300 text-center pl-[28%] pr-[28%]">
-                    <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quaerat ipsum ut porro delectus, maxime aperiam sed dolorem, reiciendis sunt quod dolore officiis? Earum, dignissimos neque sapiente nobis id fugiat.</p>
-                </div>
-                <div class="border-1 border-white bg-white/10 backdrop-blur-none mt-[2rem] ml-[45.5%] h-[3rem] w-[10rem] rounded-[2rem] hover:bg-white/40">
-                    <button class="text-center pt-[0.65rem] pl-[0.9rem] text-white cursor-pointer">VIEW FULL MENU</button>
-                </div>
+            </div>
+            <div class="mt-[-6.5rem] max-2xl:mt-[-5rem] max-xl:mt-[-4rem] max-lg:mt-[-3rem] max-sm:mt-[-1.35rem]">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,  63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
         </section>
         <section>
-            <div class="w-80%">
-                <div class="mt-[-6.5rem]">
-                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,  63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
-                </div>
+            <div class="w-80% overflow-hidden">
                 <div class="box-border">
-                    <div class="flex justify-center items-center mt-[5rem] gap-[2rem] h-[40rem]">
+                    <div class="flex justify-center items-center mt-[5rem] gap-[2rem] h-[40rem] max-xl:mt-[2rem] max-lg:mt-[0.5rem] max-lg:h-[30rem]">
                         <div class="relative">
-                            <div class="w-[5.5rem] h-[5.5rem] bg-primary rounded-[50%] absolute left-[38rem] z-[1] rotate-[-15deg]">
-                                <h1 class="text-center text-white font-medium mt-[1.2rem]">Since <br> 2005</h1>
+                            <div class="w-[5.5rem] h-[5.5rem] bg-primary rounded-[50%] absolute left-[38rem] z-[1] rotate-[-15deg] max-2xl:left-[32.05rem] max-xl:w-[4.5rem] max-xl:h-[4.5rem] max-xl:left-[19rem] max-lg:hidden">
+                                <h1 class="text-center text-white font-medium mt-[1.2rem] max-xl:text-[0.9rem] max-xl:mt-[0.85rem]">Since <br> 2005</h1>
                             </div>
-                            <div class="w-[5rem] h-[5rem] border-2 border-white rounded-[50%] absolute left-[38.3rem] top-[0.25rem] z-[2]"></div>
-                            <img src="assets/images/manager.jpg" class="rounded-[40%] w-[25rem] h-[30rem] ml-[20rem]">
-                            <div class="w-[23rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[21rem]"></div>
-                            <div class="text-primary">
-                                <i class="fa-solid fa-star-of-life text-[4rem] absolute left-[21.5rem] top-[23.5rem]"></i>
-                                <i class="fa-solid fa-star-of-life text-[2rem] absolute left-[18.5rem] top-[22rem]"></i>
-                                <i class="fa-solid fa-star-of-life absolute left-[19.5rem] top-[26rem]"></i>
+                            <div class="w-[5rem] h-[5rem] border-2 border-white rounded-[50%] absolute left-[38.3rem] top-[0.25rem] z-[2] max-2xl:left-[32.3rem] max-xl:w-[4rem] max-xl:h-[4rem] max-xl:left-[19.25rem] max-lg:hidden"></div>
+                            <img src="assets/images/manager.jpg" class="rounded-[40%] w-[25rem] h-[30rem] ml-[20rem] max-2xl:ml-[15rem] max-xl:w-[20rem] max-xl:h-[25rem] max-xl:ml-[4rem] max-lg:hidden">
+                            <div class="w-[23rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[21rem] max-2xl:left-[16rem] max-xl:w-[18rem] max-xl:h-[23rem] max-xl:left-[5rem] max-lg:hidden"></div>
+                            <div class="text-primary max-lg:hidden">
+                                <i class="fa-solid fa-star-of-life text-[4rem] absolute left-[21.5rem] top-[23.5rem] max-2xl:left-[16.5rem] max-xl:text-[3.5rem] max-xl:top-[19.5rem] max-xl:left-[5rem]"></i>
+                                <i class="fa-solid fa-star-of-life text-[2rem] absolute left-[18.5rem] top-[22rem] max-2xl:left-[13.5rem] max-xl:text-[1.5rem] max-xl:top-[18.5rem] max-xl:left-[3rem]"></i>
+                                <i class="fa-solid fa-star-of-life absolute left-[19.5rem] top-[26rem] max-2xl:left-[14.5rem] max-xl:text-[0.8rem] max-xl:top-[21.5rem] max-xl:left-[3.5rem]"></i>
                             </div>
                         </div>
-                        <div class="w-[40rem] text-justify mr-[20rem]">
-                            <div class="text-primary pb-[1.5rem]">
+                        <div class="w-[40rem] text-justify mr-[20rem] max-2xl:mr-[10rem] max-xl:mr-[2rem] max-xl:w-[30rem] max-lg:text-center max-lg-[20rem]">
+                            <div class="text-primary pb-[1.5rem] max-xl:pb-[0.4rem]">
                                 <i class="fa-solid fa-diamond"></i>
                                 <i class="fa-solid fa-diamond"></i>
                                 <i class="fa-solid fa-diamond"></i>
                             </div>
                             <div class="text-primary">
-                                <h1 class="text-[1.1rem] font-medium pb-[1rem]">ABOUT US</h1>
+                                <h1 class="text-[1.1rem] font-medium pb-[1rem] max-xl:pb-[0.2rem] max-xl:text-[1rem]">ABOUT US</h1>
                             </div>
-                            <div class="text-[2rem] font-semibold">
+                            <div class="text-[2rem] font-semibold max-xl:text-[1.7rem]">
                                 <h1>A Culinary Exprience of <br> <span class="text-primary">Elegance and Excellence</span></h1>
                             </div>
-                            <div class="pt-[1rem] text-gray-400">
+                            <div class="pt-[1rem] text-gray-400 max-xl:pt-[0.2rem] max-xl:text-[0.9rem]">
                                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, magni numquam? Pariatur unde aliquid aspernatur libero ipsam sunt, ratione sint nisi iure repellat inventore tempora autem ab eveniet vitae totam.</p>
                             </div>
                             <div class="flex justify-between items-center pt-[1.5rem]">
@@ -136,12 +143,12 @@
                         </div>
                     </div>
                 </div>
-                <div class="rotate-[180deg] mb-[-8rem]">
-                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
-                </div>
             </div>
         </section>
-        <section class="bg-secondary h-[80rem]">
+        <section class="bg-secondary h-[80rem] overflow-hidden">
+            <div class="rotate-[180deg] mb-[-8rem]">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+            </div>
             <div class="w-full">
                 <div class="pt-[15rem] text-center text-primary pb-[1rem]">
                     <i class="fa-solid fa-diamond"></i>
@@ -337,7 +344,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div class="w-full h-[60rem]">
                 <div class="mt-[-6rem]">
                     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
@@ -402,7 +409,7 @@
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div class="bg-two bg-cover h-[50rem]">
                 <div class="text-center pt-[10.5rem]">
                     <div class="text-primary mt-[10rem]">
@@ -422,7 +429,7 @@
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
         </section>
-        <section class="h-[70rem]">
+        <section class="h-[70rem] overflow-hidden">
             <div>
                 <div class="pt-[8rem] text-center text-primary pb-[1rem]">
                     <i class="fa-solid fa-diamond"></i>
@@ -503,7 +510,7 @@
                 </div>
             </div>
         </section>
-        <section class="bg-secondary h-[70rem] max-md:hidden">
+        <section class="bg-secondary h-[70rem] overflow-hidden max-md:hidden">
             <div class="rotate-[180deg] mb-[-8rem]">
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
@@ -602,7 +609,7 @@
                 </div>
             </div>
         </section>
-        <section class="h-[70rem]">
+        <section class="h-[70rem] overflow-hidden">
             <div class="mt-[-7rem]">
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
@@ -659,7 +666,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div class="rotate-[180deg] mb-[-7rem]">
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
@@ -736,7 +743,7 @@
                 </div>
             </div>
         </section>
-        <section class="h-[70rem]">
+        <section class="h-[70rem] overflow-hidden">
             <div class="mt-[-6.5rem]">
                 <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
             </div>
@@ -805,7 +812,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div class="bg-secondary h-[80rem]">
                 <div class="rotate-[180deg] mt-[-8rem] w-full">
                     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
@@ -880,7 +887,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="overflow-hidden">
             <div class="h-[70rem]">
                 <div class="mt-[-6.5rem]">
                     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
@@ -936,7 +943,7 @@
                 </div>
             </div>
         </section>
-        <footer>
+        <footer class="overflow-hidden">
             <div class="bg-tertiary h-[40rem] overflow-hidden">
                 <div class="rotate-[180deg]">
                     <svg class="mt-[-0.5rem]" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,20L10,30C20,40,40,60,60,66.7C80,73,100,67,120,63.3C140,60,160,60,180,53.3C200,47,220,33,240,28.3C260,23,280,27,300,35C320,43,340,57,360,58.3C380,60,400,50,420,38.3C440,27,460,13,480,21.7C500,30,520,60,540,63.3C560,67,580,43,600,43.3C620,43,640,67,660,78.3C680,90,700,90,720,86.7C740,83,760,77,780,71.7C800,67,820,63,840,66.7C860,70,880,80,900,71.7C920,63,940,37,960,30C980,23,1000,37,1020,46.7C1040,57,1060,63,1080,65C1100,67,1120,63,1140,55C1160,47,1180,33,1200,31.7C1220,30,1240,40,1260,41.7C1280,43,1300,37,1320,36.7C1340,37,1360,43,1380,48.3C1400,53,1420,57,1430,58.3L1440,60L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
