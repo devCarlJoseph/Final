@@ -4,7 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <style type="text/tailwindcss">
         @theme {
           --color-primary: #fc5f0a;
@@ -48,12 +47,13 @@
             background-image: url(assets/images/spiced\ potato.jpg);
         }
       </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
     <div class="w-full h-full m-0 p-0 box-border">
         <header>
             <div class="flex justify-center items-center">
-                <div class="flex justify-between w-[80%] bg-transparent border-b-1 border-b-gray-200 absolute top-1 overflow-hidden">
+                <div class="flex justify-between w-[80%] bg-transparent border-b-1 border-b-gray-200 absolute top-1">
                     <div class="flex gap-1.5 mt-[0.7rem] mb-[0.7rem]">
                          <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%] text-white">
                              <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
@@ -64,17 +64,19 @@
                          </div>
                     </div>
                     <div class="mt-[1.5rem] mb-[0.7rem]">
-                         <div class="hidden max-lg:block">
-                             <i class="fa-solid fa-bars text-[1.3rem] text-white"></i>
-                         </div>
-                         <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
-                             <li class="border-b-white border-b-[1px]"><a href="#"></a>Home</li>
-                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Menu</li>
-                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
-                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
-                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
-                             <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
-                         </ul>
+                        <div class="hidden max-lg:block">
+                            <i id="headerButton" class="fa-solid fa-bars text-[1.3rem] text-white cursor-pointer"></i>
+                        </div>
+                        <div>
+                            <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
+                                <li class="border-b-white border-b-[1px]"><a href="#"></a>Home</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Menu</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
+                            </ul>
+                        </div>
                     </div>
                     <div class="bg-transparent h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem] max-lg:hidden">
                          <button class="p-2.5 text-white pl-[1.7rem] cursor-pointer">BOOK A TABLE</button>
@@ -83,6 +85,20 @@
             </div>
         </header>
         <section>
+            <!--Open Header-->
+            <div id="headerContent" class="w-full h-[17rem] bg-secondary absolute top-[-1rem] hidden transition">
+                <ul class="flex flex-col items-center gap-3 cursor-pointer text-black mt-[3.5rem] text-center">
+                    <div class="ml-[94%] absolute top-[2rem]">
+                        <i id="headerClose" class="fa-solid fa-xmark text-[1.5rem]"></i>
+                    </div>
+                    <li class="border-b-black border-b-[1px] w-full"><a href="#"></a>Home</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Menu</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>About Us</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Gallery</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Blogs</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Contact Us</li>
+                </ul>
+            </div>
             <div class="w-full overflow-hidden">
                 <div class="bg-[url('/assets/images/main.jpg')] bg-cover bg-center h-screen max-lg:h-[70%] max-sm:h-[55%]">
                     <div class="text-white flex justify-center items-center gap-5 pt-[17rem] max-2xl:pt-[14rem] max-lg:pt-[10rem] max-lg:gap-3 max-sm:pt-[8rem] max-sm:gap-2">
@@ -649,19 +665,19 @@
                 <div class="rotate-[180deg] mb-[-6.5rem] max-2xl:mb-[-6rem] max-xl:mb-[-4rem] max-lg:mb-[-3rem]">
                     <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
                 </div>
-                <div class="bg-two bg-cover h-[50rem] max-xl:h-[40rem] max-lg:h-[30rem]">
-                    <div class="text-center pt-[10.5rem] max-xl:pt-[5.5rem] max-lg:pt-[4.5rem]">
+                <div class="bg-two bg-cover h-[50rem] max-xl:h-[40rem] max-lg:h-[30rem] max-sm:h-[20rem]">
+                    <div class="text-center pt-[10.5rem] max-xl:pt-[5.5rem] max-lg:pt-[4.5rem] max-sm:pt-[2.5rem]">
                         <div class="text-primary mt-[10rem] max-xl:mt-[8rem] max-lg:mt-[4rem]">
-                            <i class="fa-solid fa-diamond"></i>
-                            <i class="fa-solid fa-diamond"></i>
-                            <i class="fa-solid fa-diamond"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
                         </div>
                         <div>
-                            <h1 class="text-white text-[5rem] font-medium max-2xl:text-[4.5rem] max-xl:text-[3rem] max-lg:text-">Get a Glimpse of Our Dining Experience</h1>
+                            <h1 class="text-white text-[5rem] font-medium max-2xl:text-[4.5rem] max-xl:text-[3rem] max-sm:text-[1.5rem]">Get a Glimpse of Our Dining Experience</h1>
                         </div>
                     </div> 
-                    <div class="w-[4.5rem] h-[4.5rem] border-2 border-white rounded-[50%] text-center ml-[47.45%] max-xl:w-[3.5rem] max-xl:h-[3.5rem] max-lg:ml-[47%] max-lg:w-[3rem] max-lg:h-[3rem]">
-                        <i class="fa-solid fa-circle-play text-[2rem] text-white mt-[1.1rem] cursor-pointer max-xl:mt-[0.6rem] max-lg:mt-[0.4rem]"></i>
+                    <div class="w-[4.5rem] h-[4.5rem] border-2 border-white rounded-[50%] text-center ml-[47.45%] max-xl:w-[3.5rem] max-xl:h-[3.5rem] max-lg:ml-[47%] max-lg:w-[3rem] max-lg:h-[3rem] max-sm:w-[2rem] max-sm:h-[2rem]">
+                        <i class="fa-solid fa-circle-play text-[2rem] text-white mt-[1.1rem] cursor-pointer max-xl:mt-[0.6rem] max-lg:mt-[0.4rem] max-sm:text-[1rem]"></i>
                     </div>
                 </div>  
             </div>
@@ -1071,32 +1087,56 @@
                     </div>
                     <div class="flex justify-center items-center gap-7 mt-[2rem] overflow-hidden">
                         <div>
-                            <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm flex justify-between items-center">
+                            <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] flex justify-between items-center shadow-sm relative">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">Where is your restaurant located?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_1"></i>
+                            </div>
+                            <div class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_1">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Wee are located at LOCATION!!!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Exactly we are located at luyo sa among balay nga wala ka kabalo then mangutana raka asa ni dapit dayon makatoltol naka.</div>    
                             </div>
                             <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">What type of cuisine do you serve?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_2"></i>
+                            </div>
+                            <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_2">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Di ko mo saba!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Joke langs! Bisag unsa nga pagkaon pwede ilaga, iring or unsa pana diha basta mabusog mong tanan libre ra nya libre nasad ang lungon.</div>    
                             </div>
                             <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">What are your restaurant's opening and closing hours?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_3"></i>
+                            </div>
+                            <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_3">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Di mi manirado!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Bisag walay tawo mangabli gihapon mi og naay tawo ara nami manirado ingon ana ka class among restaurant sheeesh!!</div>    
                             </div>
                             <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">What is your cancellation policy for reservations?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_4"></i>
+                            </div>
+                            <div id="faqContentFour" class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_4">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Ahh di mi mo dawat ana!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Way cancel2 ni amoa og imong e cancel ikaw nalang among e cancel sa life bleee tuga2 kag reserve nya imong e cancel!!</div>    
                             </div>
                             <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">Do you have any ongoing promotions or discounts?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_5"></i>
+                            </div>
+                            <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_5">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Wa oy kinsa man ka!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Di mi mohatag og discount sa mga maot dapat mga gwapo rajud og maot ka aynalang pangayo og discount BLEEEE!!</div>    
                             </div>
                             <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center">
                                 <h1 class="text-[1.1rem] font-medium ml-[1rem]">What payment methods do you accept?</h1>
-                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer"></i>
+                                <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn" data-content="faq_content_6"></i>
+                            </div>
+                            <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden faq_content_6">
+                                <div class="font-medium ml-[1rem] pt-[0.5rem] text-gray-400">Bisag unsa!!</div>
+                                <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] text-gray-400">Pwede imong alkansiya og wa ka nya og wajud kay sulod sa alkansiya inyo lang balay para nice!</div>    
                             </div>
                         </div>
-                        <div class="flex flex-col items-center">
+                        <div class="flex flex-col items-center sticky">
                             <div class="bg-three h-[20rem] w-[27rem] bg-cover rounded-[1rem]">
                                 <div class="text-center">
                                     <div class="relative">
@@ -1268,5 +1308,7 @@
             </div>
         </footer>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/js/index.js"></script>
 </body>
 </html>
