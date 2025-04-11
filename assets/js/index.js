@@ -47,8 +47,30 @@ $(document).ready(function() {
     $('.js-faq-btn').on('click', function(e) {
         e.preventDefault();
 
-        const content = $(this).attr('data-content');
-        $('.' + content).toggle();
+        const changeIcon = $(this);
+        const content = changeIcon.data('content');
+
+        changeIcon.toggleClass('fa-plus fa-minus');
+
+        $('.' + content).toggleClass('hidden');
     });
 });
 
+
+$(document).ready(function () {
+    $('.video-btn').on('click', function(e) {
+        e.preventDefault();
+
+        const video = $(this).attr('video-content');    
+        $('.' + video).toggle('hidden');
+    });
+});
+
+$(document).ready(function () {
+    $('.v-close-btn').on('click', function(e) {
+        e.preventDefault();
+
+        const closeVideo = $(this).attr('video-close');
+        $('.' + closeVideo).toggle('hidden')
+    })
+})
