@@ -62,15 +62,13 @@ $(document).ready(function () {
         e.preventDefault();
 
         const video = $(this).attr('video-content');    
-        $('.' + video).toggle('hidden');
+        $('.' + video).toggleClass('hidden');
     });
-});
 
-$(document).ready(function () {
     $('.v-close-btn').on('click', function(e) {
         e.preventDefault();
 
         const closeVideo = $(this).attr('video-close');
-        $('.' + closeVideo).toggle('hidden')
+        $('.' + closeVideo).toggleClass('hidden');
     })
-})
+});
