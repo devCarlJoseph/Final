@@ -1,0 +1,1560 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CjCo Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #fc5f0a;
+          --color-secondary: #faf4e6;
+          --color-tertiary: #242424;
+          --background-workmates : 'work mates.png';
+          --breakpoint-2xl: 1540px;
+          --breakpoint-2xs: 21rem;
+          --breakpoint-xs: 23.75rem;
+        }
+
+        .bg-two {
+            background-image: url(/assets/images/work\ mates.png);
+        }
+
+        .bg-three {
+            background-image: url(/assets/images/ambot.jpg);
+        }
+
+        .bg-garlic {
+            background-image: url(/assets/images/garlic\ bread\ w\ cheese.jpg);
+        }
+
+        .bg-greek {
+            background-image: url(/assets/images/greek\ feta\ salad.jpg);
+        }
+
+        .bg-mozzarella {
+            background-image: url(/assets/images/mozzarella\ stick.jpg);
+        }
+
+        .bg-pesto {
+            background-image: url(/assets/images/pesto\ zucchini.jpg);
+        }
+
+        .bg-roll {
+            background-image: url(/assets/images/vegetable\ spring\ roll.jpg);
+        }
+
+        .bg-spiced {
+            background-image: url(/assets/images/spiced\ potato.jpg);
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-full m-0 p-0 box-border">
+        <header>
+            <div class="flex justify-center items-center">
+                <div class="flex justify-between w-[80%] bg-transparent border-b-1 border-b-gray-200 absolute top-1">
+                    <div class="flex gap-1.5 mt-[0.7rem] mb-[0.7rem]">
+                         <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%] text-white">
+                             <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+                         </div>
+                         <div>
+                             <h1 class="text-[1.5rem] font-bold text-white">CjCo</h1>
+                             <h1 class="text-[0.7rem] text-gray-300">RESTAURANT</h1>
+                         </div>
+                    </div>
+                    <div class="mt-[1.5rem] mb-[0.7rem]">
+                        <div class="hidden max-lg:block">
+                            <i id="headerButton" class="fa-solid fa-bars text-[1.3rem] text-white cursor-pointer"></i>
+                        </div>
+                        <div>
+                            <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
+                                <li class="border-b-white border-b-[1px]"><a href="./home.html">Home</a></li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="./menu.html">Menu</a></li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-transparent h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem] max-lg:hidden">
+                         <button class="p-2.5 text-white pl-[1.7rem] cursor-pointer">BOOK A TABLE</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!--Open Header-->
+            <div id="headerContent" class="w-full h-full bg-secondary absolute top-[-1rem] z-[1] hidden transition">
+                <ul class="flex flex-col items-center gap-3 cursor-pointer text-black mt-[3.5rem] text-center">
+                    <div class="ml-[94%] absolute top-[2rem]">
+                        <i id="headerClose" class="fa-solid fa-xmark text-[1.5rem]"></i>
+                    </div>
+                    <li class="border-b-black border-b-[1px] w-full"><a href="./home.html"></a>Home</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="./menu.html">Menu</a></li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>About Us</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Gallery</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Blogs</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Contact Us</li>
+                </ul>
+            </div>
+            <div class="w-full overflow-hidden">
+                <div class="bg-[url('/assets/images/main.jpg')] bg-cover bg-center h-screen max-lg:h-[70%] max-sm:h-[55%]">
+                    <div class="text-white flex justify-center items-center gap-5 pt-[17rem] max-2xl:pt-[14rem] max-lg:pt-[10rem] max-lg:gap-3 max-sm:pt-[8rem] max-sm:gap-2">
+                        <div class="text-primary">
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-[1.5rem] font-sm max-2xl:text-[1.2rem] max-lg:text-[1rem] max-sm:text-[0.7rem]">KAON NAMO DIRI DI MO HILOAN</h1>
+                        </div>
+                        <div class="text-primary">
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="mt-[0.5rem] text-center text-white">
+                            <h1 class="text-[4.5rem] font-medium max-2xl:text-[3.5rem] max-xl:text-[2.5rem] max-sm:text-[1.5rem]">Lami nga Plato & <br> Memories Naka Ugma</h1>
+                        </div>
+                        <div class="text-[0.95rem] mt-[0.7rem] text-gray-300 text-center pl-[28%] pr-[28%] max-2xl:pl-[20%] max-2xl:pr-[20%] max-xl:pl-[15%] max-xl:pr-[15%] max-lg:mt-[0.4rem] max-sm:pl-[5%] max-sm:pr-[5%] ">
+                            <p class="text-center max-lg:text-[0.8rem]">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Eligendi quaerat ipsum ut porro delectus, maxime aperiam sed dolorem, <span class="max-sm:hidden">reiciendis sunt quod dolore officiis? Earum, dignissimos neque sapiente nobis id fugiat.</span></p>
+                        </div>
+                        <div class="border-1 border-white bg-white/10 backdrop-blur-none mt-[2rem] ml-[45.5%] h-[3rem] w-[10rem] rounded-[2rem] hover:bg-white/40 max-2xl:ml-[44.5%] max-xl:ml-[42.5%] max-lg:ml-[39.55%] max-lg:mt-[1.2rem]  max-sm:h-[2rem] max-sm:w-[8rem] max-sm:mt-[0.9rem] max-sm:ml-[34.95%] max-xs:ml-[32.5%] max-2xs:ml-[31%]">
+                            <button class="text-center pt-[0.65rem] pl-[0.9rem] text-white cursor-pointer max-sm:text-[0.8rem] max-sm:pt-[0.3rem]"><a href="./menu.html">VIEW FULL MENU</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-[-6.5rem] max-2xl:mt-[-5rem] max-xl:mt-[-4rem] max-lg:mt-[-3rem] max-sm:mt-[-1.35rem]">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,  63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+            </div>
+        </section>
+        <section>
+            <div class="w-80% overflow-hidden max-sm:h-[20rem] bg-white">
+                <div class="box-border">
+                    <div class="flex justify-center items-center mt-[5rem] gap-[2rem] h-[40rem] max-xl:mt-[2rem] max-lg:mt-[0.5rem] max-lg:h-[30rem]">
+                        <div class="relative">
+                            <div class="w-[5.5rem] h-[5.5rem] bg-primary rounded-[50%] absolute left-[38rem] z-[1] rotate-[-15deg] max-2xl:left-[32.05rem] max-xl:w-[4.5rem] max-xl:h-[4.5rem] max-xl:left-[19rem] max-lg:hidden">
+                                <h1 class="text-center text-white font-medium mt-[1.2rem] max-xl:text-[0.9rem] max-xl:mt-[0.85rem]">Since <br> 2005</h1>
+                            </div>
+                            <div class="w-[5rem] h-[5rem] border-2 border-white rounded-[50%] absolute left-[38.3rem] top-[0.25rem] z-[2] max-2xl:left-[32.3rem] max-xl:w-[4rem] max-xl:h-[4rem] max-xl:left-[19.25rem] max-lg:hidden"></div>
+                            <img src="/assets/images/manager.jpg" class="rounded-[40%] w-[25rem] h-[30rem] ml-[20rem] max-2xl:ml-[15rem] max-xl:w-[20rem] max-xl:h-[25rem] max-xl:ml-[4rem] max-lg:hidden">
+                            <div class="w-[23rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[21rem] max-2xl:left-[16rem] max-xl:w-[18rem] max-xl:h-[23rem] max-xl:left-[5rem] max-lg:hidden"></div>
+                            <div class="text-primary max-lg:hidden">
+                                <i class="fa-solid fa-star-of-life text-[4rem] absolute left-[21.5rem] top-[23.5rem] max-2xl:left-[16.5rem] max-xl:text-[3.5rem] max-xl:top-[19.5rem] max-xl:left-[5rem]"></i>
+                                <i class="fa-solid fa-star-of-life text-[2rem] absolute left-[18.5rem] top-[22rem] max-2xl:left-[13.5rem] max-xl:text-[1.5rem] max-xl:top-[18.5rem] max-xl:left-[3rem]"></i>
+                                <i class="fa-solid fa-star-of-life absolute left-[19.5rem] top-[26rem] max-2xl:left-[14.5rem] max-xl:text-[0.8rem] max-xl:top-[21.5rem] max-xl:left-[3.5rem]"></i>
+                            </div>
+                        </div>
+                        <div class="w-[40rem] text-justify mr-[20rem] max-2xl:mr-[10rem] max-xl:mr-[2rem] max-xl:w-[30rem] max-lg:text-center max-lg-[20rem] max-sm:mt-[-11rem]">
+                            <div class="text-primary pb-[1.5rem] max-xl:pb-[0.4rem]">
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                            </div>
+                            <div class="text-primary">
+                                <h1 class="text-[1.1rem] font-medium pb-[1rem] max-xl:pb-[0.2rem] max-xl:text-[1rem] max-sm:text-[0.8rem] max-2xs:text-[0.6rem]">ABOUT US</h1>
+                            </div>
+                            <div class="text-[2rem] font-semibold max-xl:text-[1.7rem] max-sm:text-[1.2rem] max-2xs:text-[1rem]">
+                                <h1>A Culinary Exprience of <br> <span class="text-primary">Elegance and Excellence</span></h1>
+                            </div>
+                            <div class="pt-[1rem] text-gray-400 max-xl:pt-[0.2rem] max-xl:text-[0.9rem] max-sm:text-[0.7rem] max-2xs:text-[0.6rem]">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, magni numquam? Pariatur unde aliquid aspernatur libero ipsam sunt, ratione sint nisi iure repellat inventore tempora autem ab eveniet vitae totam.</p>
+                            </div>
+                            <div class="flex justify-between items-center pt-[1.5rem] max-sm:pt-[1rem] max-2xs:pt-[0.5rem]">
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">5-Star</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Dining Experience</p>
+                                </div>
+                                <div class="border-r-1 border-gray-200 h-[5rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">150,000+</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Happy Guests</p>
+                                </div>
+                                <div class="border-r-1 border-gray-200 h-[5rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">99%</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Guest Satisfaction</p>
+                                </div>
+                            </div>
+                            <div class="mt-[1.5rem] max-sm:mt-[0.8rem]">
+                                <h1 class="text-[1.5rem] font-bold max-sm:text-[1rem] max-2xs:text-[0.8rem]">Manang G</h1>
+                                <p class="text-[0.9rem] text-gray-400 font-sm max-sm:text-[0.7rem] max-2xs:text-[0.6rem]">Manang G <span class="text-primary">•</span> Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-secondary h-[80rem] overflow-hidden max-xl:h-[70rem] max-sm:h-[40rem] max-xs:h-[35rem]">
+                <div class="rotate-[180deg] mb-[-8rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="w-full">
+                    <div class="pt-[15rem] text-center text-primary pb-[1rem] max-sm:pt-[10rem] max-sm:pb-[0.6rem] max-xs:pb-[0.5rem]">
+                        <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-xs:text-[0.7rem]"></i>
+                        <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-xs:text-[0.7rem]"></i>
+                        <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-xs:text-[0.7rem]"></i> 
+                    </div>
+                    <div class="text-center text-primary">
+                        <h1 class="text-[1.2rem] font-medium pb-[1rem] max-sm:text-[1rem] max-sm:pb-[0.6rem] max-xs:text-[0.9rem] max-xs:pb-[0.5rem]">FOOD MENU</h1>
+                    </div>
+                    <div class="text-center font-semibold">
+                        <h1 class="text-[2.5rem] max-sm:text-[1.5rem] max-xs:text-[1rem]">Timeless <span class="text-primary">Culinary Delights</span></h1>
+                    </div>
+                    <div class="flex justify-center items-center gap-[20rem] max-xl:gap-[11rem] max-lg:hidden">
+                        <div class="w-[14rem] h-[3rem] bg-primary mt-[1.5rem] ml-[35rem] relative max-2xl:ml-[23rem] max-xl:ml-[14rem]">
+                            <i class="fa-solid fa-caret-right text-secondary absolute text-[4.9rem] top-[-0.93rem] left-[-1rem]"></i>
+                            <h1 class="text-center font-medium text-white pt-[0.7rem]">Starters & Appetizers</h1>
+                            <i class="fa-solid fa-caret-left text-secondary absolute text-[4.9rem] top-[-0.93rem] right-[-1rem]"></i>
+                        </div>
+                        <div class="w-[12rem] h-[3rem] bg-primary mt-[1.5rem] mr-[35rem] relative max-2xl:mr-[23rem] max-xl:mr-[14rem]">
+                            <i class="fa-solid fa-caret-right text-secondary absolute text-[4.9rem] top-[-0.93rem] left-[-1rem]"></i>
+                            <h1 class="text-center font-medium text-white pt-[0.7rem]">Main Course</h1>
+                            <i class="fa-solid fa-caret-left text-secondary absolute text-[4.9rem] top-[-0.93rem] right-[-1rem]"></i>
+                        </div>
+                    </div>
+                    <div class="flex justify-between items-center mt-[3rem] max-2xl:mt-[2rem] max-xl:mt-[1rem] max-lg:hidden">
+                        <div class="w-[25%] h-[30%] ml-[23.5%] max-2xl:ml-[16%] max-2xl:w-[31%] max-xl:ml-[6.5rem] max-xl:w-[38%]">
+                            <div class="flex">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/spiced potato.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <div>
+                                        <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Spicy Potato Wedges <span class="text-gray-500">.......................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    </div>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/vegetable spring roll.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Vegetable Spring Roll <span class="text-gray-500">.......................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/garlic bread w cheese.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Garlic Bread with Cheese <span class="text-gray-500">................ </span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/greek feta salad.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Greek Feta Salad <span class="text-gray-500">...............................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/mozzarella stick.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Mozzarella Sticks<span class="text-gray-500"> ..............................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[25%] h-[30%] mr-[23.5%] max-2xl:mr-[16%] max-2xl:w-[31%] max-xl:mr-[6.5rem] max-xl:w-[38%]">
+                            <div class="flex">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/pesto zucchini.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Pesto Zucchini Noodles<span class="text-gray-500"> ...................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/pepperoni.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Pepperoni Paradise Pie <span class="text-gray-500">....................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/caprese.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Caprese Carnival Crust <span class="text-gray-500">.....................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/tacos.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Quinoa Tacos <span class="text-gray-500">......................................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex mt-[1rem]">
+                                <div>
+                                    <img class="w-[6rem] h-[6rem] rounded-[50%] max-xl:w-[5rem] max-xl:h-[5rem]" src="/assets/images/udon.jpg">
+                                </div>
+                                <div class="mt-[1rem] ml-[0.5rem]">
+                                    <h1 class="text-[1.3rem] font-medium max-xl:text-[1rem]">Udon Noodles <span class="text-gray-500">....................................</span> <span class="font-medium text-[1.2rem] text-gray-500 max-xl:text-[1rem]">$15</span></h1>
+                                    <div class="flex justify-between">
+                                        <div class="text-gray-400 max-xl:text-[0.9rem]">
+                                            <p>Lorem ipsum dolor sit amet</p>
+                                        </div>
+                                        <div class="w-[3.5rem] h-[2rem] bg-transparent border-2 border-primary rounded-[1rem] text-center cursor-pointer max-xl:w-[3rem] max-xl:h-[1.5rem]">
+                                            <button class="text-primary font-medium max-xl:text-[0.8rem]">New</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[10rem] h-[3rem] bg-transparent border-1 border-primary rounded-[1rem] mt-[3rem] ml-[45.5%] text-center cursor-pointer hover:bg-primary/30 hover:text-white max-2xl:ml-[44.7%] max-2xl:mt-[2rem] max-xl:w-[8rem] max-xl:h-[2rem] max-xl:ml-[43.7%] max-lg:ml-[41.5%] max-sm:ml-[34.5%] max-sm:mt-[1rem] max-xs:ml-[32%] max-xs:mt-[0.75rem] max-2xs:ml-[29%]">
+                        <button class="mt-[0.6rem] text-primary font-medium cursor-pointer max-xl:text-[0.8rem] max-xl:mt-[0.3rem]">Browse Full Menu</button>
+                    </div>
+                    <div class="mt-[2rem] max-sm:mt-[1.5rem]">           
+                        <div class="hidden ml-[1.5rem] mr-[1.5rem] gap-3 max-lg:grid max-lg:grid-cols-5 lg:grid-rows-5 max-2xl:hidden max-xl:hidden max-sm:hidden">
+                            <div class="col-span-2 row-span-2">
+                                <div class="bg-[url('/assets/images/caprese.jpg')] bg-cover h-[12rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[8.3rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Caprese Carnival Crust</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-2 row-span-2 col-start-4 row-start-4">
+                                <div class="bg-garlic bg-cover h-[12rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[8.3rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Garlic Bread with Cheese</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-2 row-span-2 col-start-4 row-start-1">
+                                <div class="bg-greek bg-cover h-[12rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[8.3rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Greek Feta Salad</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-span-2 row-span-2 col-start-1 row-start-4">
+                                <div class="bg-mozzarella bg-cover h-[12rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[8.3rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Mozzarella Sticks</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-span-2 col-start-3 row-start-1">
+                                <div class="bg-[url('/assets/images/pepperoni.jpg')] bg-cover h-[9.5rem] mt-[1.5rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[5.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Pepperoni Pie</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-span-2 col-start-3 row-start-4">
+                                <div class="bg-pesto bg-cover h-[9.5rem] mt-[1.1rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>                           
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[5.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Pesto Zucchini</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-1 row-start-3">
+                                <div class="bg-[url('/assets/images/udon.jpg')] bg-cover h-[7.5rem] mt-[0.75rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[3.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Udon Noodles</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-2 row-start-3">
+                                <div class="bg-roll bg-cover h-[7.5rem] mt-[0.75rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[3.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Vege Roll</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-3 row-start-3">
+                                <div class="bg-spiced bg-cover h-[9.5rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[5.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Spiced Potato</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-4 row-start-3">
+                                <div class="bg-[url('/assets/images/shrimp.webp')] bg-cover h-[7.5rem] mt-[0.75rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[3.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Spices Shrimp</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-start-5 row-start-3">
+                                <div class="bg-[url('/assets/images/tacos.jpg')] bg-cover h-[7.5rem] mt-[0.75rem] rounded-[0.5rem] shadow-md">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.5rem] mt-[3.8rem]">
+                                        <h1 class="text-tertiary font-bold text-center pt-[0.2rem]">Quinoa Tacos</h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>    
+                    </div>
+                    <div>                       
+                        <div class="hidden max-sm:grid max-sm:grid-cols-2 max-sm:grid-rows-3 gap-3 max-2xl:hidden max-xl:hidden max-lg:hidden max-md:hidden">
+                            <div class="row-span-2 w-[80%] h-[12rem] ml-[20%]">
+                                <div class="bg-[url('/assets/images/tacos.jpg')] bg-cover h-[12rem] rounded-[0.7rem] shadow-md max-xs:h-[9.5rem]">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-tertiary/40 rounded-[0.5rem] mt-[8.3rem] max-xs:mt-[5.8rem]">
+                                        <h1 class="text-white font-semibold text-center pt-[0.2rem]">Quinoa Tacos</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="w-[80%] h-[7.5rem]">
+                                <div class="bg-[url('/assets/images/shrimp.webp')] bg-cover h-[7.5rem] rounded-[0.7rem] shadow-md max-xs:h-[6.5rem]">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.7rem] mt-[3.8rem] max-xs:mt-[2.8rem]">
+                                        <h1 class="text-tertiary font-semibold text-center pt-[0.2rem]">Spices Shrimp</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-span-2 col-start-2 row-start-2 2 w-[80%] h-[12rem] mt-[0.6rem] max-xs:mt-[-0.7rem]">
+                                <div class="bg-garlic bg-cover h-[12rem] rounded-[0.7rem] shadow-md max-xs:h-[9.5rem]">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-tertiary/40 rounded-[0.7rem] mt-[8.3rem] max-xs:mt-[5.8rem]">
+                                        <h1 class="text-white font-semibold text-center pt-[0.2rem]">Garlic Bread</h1>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row-start-3 w-[80%] h-[7.5rem] mt-[-3.2rem] ml-[20%] max-xs:mt-[-5.85rem]">
+                                <div class="bg-spiced bg-cover h-[7.5rem] rounded-[0.7rem] shadow-md max-xs:h-[6.5rem]">
+                                    <div class="ml-[0.5rem] pt-[0.2rem]">
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                        <i class="fa-solid fa-star text-yellow-500"></i>
+                                    </div>
+                                    <div class="w-[100%] h-[2rem] bg-white/70 rounded-[0.7rem] mt-[3.8rem] max-xs:mt-[2.8rem]">
+                                        <h1 class="text-tertiary font-semibold text-center pt-[0.2rem]">Spiced Potato</h1>
+                                    </div>
+                                </div>
+                            </div>   
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overflow-hidden max-lg:h-[80rem] max-sm:h-[53rem] max-2xs:h-[45rem]">
+                <div class="bg-secondary mb-[-8rem] max-sm:mt-[-0.1rem] max-xs:mt-[-0.4rem] max-2xs:mt-[-0.2rem] ">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 244, 230, 1)" offset="0%"></stop><stop stop-color="rgba(250, 244, 230, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,66.7C20,63,40,57,60,51.7C80,47,100,43,120,48.3C140,53,160,67,180,60C200,53,220,27,240,15C260,3,280,7,300,20C320,33,340,57,360,55C380,53,400,27,420,16.7C440,7,460,13,480,28.3C500,43,520,67,540,66.7C560,67,580,43,600,30C620,17,640,13,660,15C680,17,700,23,720,21.7C740,20,760,10,780,13.3C800,17,820,33,840,43.3C860,53,880,57,900,51.7C920,47,940,33,960,30C980,27,1000,33,1020,35C1040,37,1060,33,1080,36.7C1100,40,1120,50,1140,55C1160,60,1180,60,1200,51.7C1220,43,1240,27,1260,26.7C1280,27,1300,43,1320,45C1340,47,1360,33,1380,36.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="w-full h-[60rem]">
+                    <div class="text-center">
+                        <div class="pt-[10rem] text-center text-primary pb-[1rem] max-sm:pb-[0.5rem]">
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i> 
+                        </div>
+                        <div class="text-center text-primary">
+                            <h1 class="text-[1.2rem] font-medium mb-[1rem] max-sm:text-[0.9rem] max-sm:mb-[0.5rem]">SPECIAL OFFERS</h1>
+                        </div>
+                        <div class="text-center font-semibold">
+                            <h1 class="text-[2.5rem] max-sm:text-[1.5rem]">Exclusive <span class="text-primary">Dining Offers</span></h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-center items-center gap-[2.5rem] max-lg:flex-col">
+                        <div class="w-[35rem] h-[23rem] bg-secondary mt-[2.5rem] ml-[23.5rem] rounded-[1rem] relative overflow-hidden max-2xl:ml-[15.5rem] max-xl:ml-[3.5rem] max-lg:w-[27rem] max-lg:ml-[0] max-sm:mt-[1.5rem] max-sm:w-[20rem] max-sm:h-[17rem] max-2xs:w-[15rem] max-2xs:h-[12.5rem]">
+                            <div class="w-[6rem] h-[6rem] bg-primary rounded-[50%] absolute top-[-0.5rem] left-[2rem] rotate-[-10deg] max-sm:hidden">
+                                <h1 class="text-white text-center text-[1.3rem] font-semibold mt-[1rem]">20%<br><span class="text-[1.2srem] font-sm">Off</span></h1>
+                            </div>
+                            <div class="w-[5.5rem] h-[5.5rem] border-2 border-white rounded-[50%] absolute top-[-0.28rem] left-[2.25rem] rotate-[-10deg] max-sm:hidden"></div>
+                            <div>
+                                <div class="mt-[7.5rem] max-sm:mt-[1.5rem]">
+                                    <div class="border-b-2 border-b-primary w-[11.2rem] absolute ml-[1rem] max-2xs:w-[8.7rem]"></div>
+                                    <h1 class="text-[1.2rem] text-primary ml-[1rem] max-2xs:text-[0.9rem]">FLAT 20% DISCOUNT</h1>
+                                    <div class="border-b-2 border-b-primary w-[11.2rem] absolute ml-[1rem] max-2xs:w-[8.7rem]"></div>
+                                </div>
+                                <h1 class="text-[2.8rem] ml-[1rem] mt-[0.5rem] max-2xs:text-[1.8rem]">Dine & Save - <br> 20% Off Today!</h1>
+                                <p class="text-gray-500 ml-[1rem] mt-[0.4rem] max-2xs:text-[0.8rem]">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <div class="w-[9rem] h-[9rem] bg-primary rounded-[50%] opacity-[15%] absolute top-[-2.5rem] left-[18rem] max-sm:left-[14.5rem] max-2xs:w-[4rem] max-2xs:h-[4rem] max-2xs:top-[-1.5rem] max-2xs:left-[10.5rem]"></div>
+                                <div class="w-[6rem] h-[6rem] bg-primary rounded-[50%] opacity-[15%] absolute top-[22.5rem] left-[2rem] max-sm:top-[13.5rem] max-2xs:top-[10rem] max-2xs:left-[2.5rem]"></div>
+                                <img class="w-[22rem] top-[-0.5rem] left-[13rem] absolute max-sm:hidden" src="/assets/images/special off 1.png">
+                            </div>
+                        </div>
+                        <div class="w-[35rem] h-[23rem] bg-primary mt-[2.5rem] mr-[23.5rem] rounded-[1rem] relative overflow-hidden max-2xl:mr-[15.5rem] max-xl:mr-[3.5rem] max-lg:w-[27rem] max-lg:mr-[0] max-lg:mt-[0] max-sm:w-[20rem] max-sm:h-[17rem] max-2xs:w-[15rem] max-2xs:h-[12.5rem]">
+                            <div class="w-[6rem] h-[6rem] bg-white rounded-[50%] absolute top-[-0.5rem] left-[2rem] rotate-[-10deg] max-sm:hidden">
+                                <h1 class="text-primary text-center text-[1.3rem] font-semibold mt-[1rem]">20%<br><span class="text-[1.2srem] font-sm">Off</span></h1>
+                            </div>
+                            <div class="w-[5.5rem] h-[5.5rem] border-2 border-primary rounded-[50%] absolute top-[-0.28rem] left-[2.25rem] rotate-[-10deg] max-sm:hidden"></div>
+                            <div>
+                                <div class="mt-[7.5rem] max-sm:mt-[1.5rem]">
+                                    <div class="border-b-2 border-b-white w-[11.2rem] absolute ml-[1rem] max-2xs:w-[8.7rem]"></div>
+                                    <h1 class="text-[1.2rem] text-white ml-[1rem] max-2xs:text-[0.9rem]">FLAT 20% DISCOUNT</h1>
+                                    <div class="border-b-2 border-b-white w-[11.2rem] absolute ml-[1rem] max-2xs:w-[8.7rem]"></div>
+                                </div>
+                                <h1 class="text-[2.8rem] ml-[1rem] mt-[0.5rem] text-white max-2xs:text-[1.8rem]">Dine & Save - <br> 20% Off Today!</h1>
+                                <p class="text-gray-300 ml-[1rem] mt-[0.4rem] max-2xs:text-[0.8rem]">Lorem ipsum dolor sit amet <br> consectetur adipisicing elit.</p>
+                            </div>
+                            <div>
+                                <div class="w-[9rem] h-[9rem] bg-secondary rounded-[50%] opacity-[55%] absolute top-[-2.5rem] max-sm:left-[14.5rem] left-[18rem] max-2xs:w-[4rem] max-2xs:h-[4rem] max-2xs:top-[-1.5rem] max-2xs:left-[10.5rem]"></div>
+                                <div class="w-[6rem] h-[6rem] bg-secondary rounded-[50%] opacity-[35%] absolute top-[22.5rem] max-sm:top-[13.5rem] left-[2rem] max-2xs:top-[10rem] max-2xs:left-[2.5rem]"></div>
+                                <img class="w-[22rem] top-[-4.5rem] left-[20.5rem] absolute max-2xl:left-[16.5rem] max-sm:hidden" src="/assets/images/special off 2.png">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overflow-hidden relative">
+                <div class="rotate-[180deg] mb-[-6.5rem] max-2xl:mb-[-6rem] max-xl:mb-[-4rem] max-lg:mb-[-3rem] max-xs:mb-[-1.5rem] max-2xs:mb-[-1rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <!--Video Trailer Pop Up of my Dining Experience-->
+                <div id="yeah" class="w-full h-full fixed z-[1] top-0 bg-black/90 hidden glimpse-video close-btn">
+                    <div class="ml-[95%] mt-[1%] max-xl:mt-[2%]">
+                        <i class="fa-solid fa-xmark text-white text-[1.5rem] cursor-pointer v-close-btn" video-close="close-btn"></i>
+                    </div>
+                    <div class="text-white text-center hidden max-2xl:block max-xl:mt-[8%] max-lg:mt-[17%] max-sm:mt-[50%]">
+                        <h1 class="text-[1.5rem] font-medium max-sm:text-[1rem] max-xs:text-[0.95rem] max-2xs:text-[0.8rem]">Explore More and Watch This Video!</h1>
+                    </div>  
+                    <div class="w-[80%] h-[75%] bg-white ml-[10%] mt-[2%] rounded-[1rem] max-2xl:mt-[2.5%] max-xl:h-[55.6%] max-xl:w-[79.4%] max-lg:h-[42%] max-sm:h-[23%] max-xs:h-[20%] max-2xs:h-[17%]">
+                        <video class="min-w-[66 %] min-h-[65%] rounded-[1rem]" src="/assets/videos/two.mp4" autoplay muted loop></video>
+                    </div>
+                </div>
+                <div class="bg-two bg-cover h-[50rem] max-xl:h-[40rem] max-lg:h-[30rem] max-sm:h-[20rem]">
+                    <div class="text-center pt-[10.5rem] max-xl:pt-[5.5rem] max-lg:pt-[4.5rem] max-sm:pt-[2.5rem]">
+                        <div class="text-primary mt-[10rem] max-xl:mt-[8rem] max-lg:mt-[4rem]">
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.8rem]"></i>
+                        </div>
+                        <div>
+                            <h1 class="text-white text-[5rem] font-medium max-2xl:text-[4.5rem] max-xl:text-[3rem] max-sm:text-[1.5rem]">Get a Glimpse of Our Dining Experience</h1>
+                        </div>
+                    </div> 
+                    <div class="w-[4.5rem] h-[4.5rem] border-2 border-white rounded-[50%] text-center ml-[47.45%] max-xl:w-[3.5rem] max-xl:h-[3.5rem] max-lg:ml-[47%] max-lg:w-[3rem] max-lg:h-[3rem] max-sm:w-[2rem] max-sm:h-[2rem]">
+                        <i class="fa-solid fa-circle-play text-[2rem] text-white mt-[1.1rem] cursor-pointer max-xl:mt-[0.6rem] max-lg:mt-[0.4rem] max-sm:text-[1rem] video-btn" video-content="glimpse-video"></i>
+                    </div>
+                </div>  
+            </div>
+            <div class="mt-[-6.5rem] max-2xl:mt-[-6rem] max-xl:mt-[-4rem] max-lg:mt-[-3.3rem] max-sm:mt-[-1.8rem] max-xs:mt-[-1.4rem]">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+            </div>
+        </section>
+        <section>
+            <div class="h-[70rem] overflow-hidden max-lg:h-[80rem] max-sm:h-[60rem] max-2xs:h-[50rem]">
+                <div class="pt-[8rem] text-center text-primary pb-[1rem] max-2xl:pt-[4rem] max-sm:pt-[2rem] max-sm:pb-[0.5rem]">
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i>
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i>
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i> 
+                </div>
+                <div class="text-center text-primary">
+                    <h1 class="text-[1.2rem] font-medium pb-[0.5rem] max-sm:pb-[0.2rem] max-2xs:text-[0.95rem]">WHY CHOOSE US</h1>
+                </div>
+                <div class="text-center font-semibold">
+                    <h1 class="text-[2.5rem] max-sm:text-[2rem] max-2xs:text-[1.5rem]">Why <span class="text-primary">Dine With Us?</span></h1>
+                </div>
+                <div class="flex justify-center items-center box-border gap-[1.5rem] mt-[3rem] max-lg:flex-col max-sm:mt-[2rem] max-2xs:mt-[1.5rem]">
+                    <div class="relative w-[23%] max-2xl:w-[25%] max-xl:w-[37.5%] max-lg:w-[50%] max-sm:w-[80%]">
+                        <img src="/assets/images/why choose us 2.avif" class="w-[30rem] h-[30rem] rounded-[40%] object-cover max-sm:h-[25rem] max-2xs:h-[20rem]">
+                        <div class="w-[25.5rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[1rem] max-2xl:w-[22.5rem] max-2xl:h-[27.9rem] max-2xl:left-[0.8rem] max-sm:h-[23rem] max-sm:w-[19.75rem] max-xs:w-[17.3rem] max-2xs:h-[18.8rem] max-2xs:w-[14.95rem] max-2xs:top-[0.6rem] max-2xs:left-[0.5rem]"></div>
+                        <div class="w-[17rem] h-[6rem] bg-primary rounded-[1.2rem] border-5 border-white absolute top-[25.5rem] left-[5.3rem] max-2xl:left-[3.8rem] max-sm:w-[14rem] max-sm:h-[5rem] max-sm:top-[21rem] max-sm:left-[4rem] max-sm:top-[19rem] max-xs:w-[13rem] max-xs:left-[3.2rem] max-2xs:w-[12rem] max-2xs:h-[4rem] max-2xs:top-[16rem] max-2xs:left-[2rem]">
+                            <div class="relative">
+                                <div>
+                                    <img src="/assets/images/pp 1.jpg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[1.5rem] max-sm:left-[0.8rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[0.6rem] max-2xs:left-[0.5rem] max-2xs:top-[0.45rem]">
+                                    <img src="/assets/images/pp 2.jpg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[3rem] max-sm:left-[2.3rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[2.1rem] max-2xs:left-[2rem] max-2xs:top-[0.45rem]">
+                                    <img src="/assets/images/pp 3.jpeg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[4.5rem] max-sm:left-[3.8rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[3.6rem] max-2xs:left-[3.5rem] max-2xs:top-[0.45rem]">
+                                </div>
+                                <div class="w-[3rem] h-[3rem] bg-black rounded-[50%] border-3 border-white text-center absolute top-[1rem] left-[6rem] max-sm:left-[5.3rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[5.1rem] max-2xs:left-[5rem] max-2xs:top-[0.45rem]">
+                                    <i class="fa-solid fa-plus text-primary text-[1.2rem] mt-[0.7rem] max-2xs:mt-[0.5rem]"></i>
+                                </div>
+                                <div class="absolute top-[1rem] left-[10.5rem] max-sm:left-[8.9rem] max-sm:top-[0.65rem] max-xs:left-[8.5rem] max-2xs:left-[8rem]">
+                                    <h1 class="text-[1.2rem] font-medium text-white max-sm:text-[1rem] max-2xs:text-[0.8rem]">4.9 Star</h1>
+                                    <span class="text-[0.8rem] text-gray-200 max-2xs:text-[0.65rem]">Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[14%] relative ml-[rem] max-2xl:w-[17%] box-border max-xl:hidden">
+                        <div>
+                            <img src="/assets/images/why choose us 1.avif" class="w-[30rem] h-[30rem] rounded-[40%] object-cover">
+                            <div class="w-[15.2rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[0.75rem] max-2xl:w-[14.8rem]"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[30%] max-2xl:w-[33%] max-xl:w-[46%] max-lg:w-[70%] max-xl:mt-[1.5rem] max-sm:w-[85%] max-sm:mt-[0] max-2xs:mt-[-1rem]">
+                        <div class="text-start max-sm:text-center">
+                            <p class="pb-[1rem] text-gray-500 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est illo commodi perspiciatis placeat quaerat! Eligendi deleniti officiis laborum,</p>
+                        </div>
+                        <hr class="border-t-1 border-t-solid border-gray-300">
+                        <div class="flex justify-evenly items-center">
+                            <div>
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">20+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Expert Chefs</p>
+                            </div>
+                            <div class="border-r-1 border-r-gray-300 h-[5rem] mt-[2rem] mb-[2rem] max-sm:h-[3.5rem] max-sm:mt-[1rem] max-sm:mb-[1rem] max-2xs:h-[3rem]"></div>
+                            <div>
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">125+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Seating Options</p>
+                            </div>
+                            <div class="border-r-1 border-r-gray-300 h-[5rem] mt-[2rem] mb-[2rem] max-sm:h-[3.5rem] max-sm:mt-[1rem] max-sm:mb-[1rem] max-2xs:h-[3rem]"></div>
+                            <div class="mr-[2rem]">
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">60+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Awards</p>
+                            </div>
+                        </div>
+                        <hr class="border-t-1 border-t-solid border-gray-300">
+                        <div class="mt-[2rem] max-sm:mt-[1rem]">
+                            <div class="flex justify-start items-center gap-4 max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Luxorious AC Dining & Comfortable Seating</h1>
+                            </div>
+                            <div class="flex justify-start items-center gap-4 mt-[0.5rem] max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Unrivaled Service, Remarkable Experience</h1>
+                            </div>
+                            <div class="flex justify-start items-center gap-4 mt-[0.5rem] max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Where Comfort Meets Exquisite Cuisine</h1>
+                            </div>
+                        </div>
+                        <div class="w-[10rem] h-[2.5rem] bg-primary mt-[2rem] rounded-[1.5rem] text-center cursor-pointer hover:bg-tertiary/80 max-lg:ml-[35%] max-sm:w-[7rem] max-sm:h-[1.5rem] max-sm:mt-[1rem] max-xs:ml-[34%] max-2xs:w-[6rem]">
+                            <button class="text-white mt-[0.5rem] font-medium cursor-pointer max-sm:text-[0.8rem] max-sm:mt-[0.15rem] max-2xs:text-[0.75rem]">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-secondary h-[70rem] overflow-hidden max-lg:h-[79rem]">
+                <div class="rotate-[180deg] mb-[-8rem] max-lg:mt-[-0.5rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="w-full mt-[7rem]">
+                    <div>
+                        <div class="pt-[6rem] text-center text-primary pb-[1rem]">
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i> 
+                        </div>
+                        <div class="text-center text-primary">
+                            <h1 class="text-[1.2rem] font-medium pb-[1rem] max-sm:pb-[0.5rem]">RESERVE A TABLE</h1>
+                        </div>
+                        <div class="text-center font-semibold">
+                            <h1 class="text-[2.5rem] max-sm:text-[2rem]">Dine With Us <span class="text-primary">- <br class="hidden max-sm:block">Reserve Now</span></h1>
+                        </div>
+                    </div>
+                    <div class="flex justify-evenly items-center box-border mt-[2.5rem] max-lg:mt-[1rem] max-sm:mt-[0]">
+                        <div class="w-[30%] ml-[27rem] max-2xl:w-[35%] max-2xl:ml-[19rem] max-xl:w-[50%] max-xl:ml-[3rem] max-lg:w-[70%] max-lg:ml-0 max-lg:mt-[2rem]">
+                            <div class="flex justify-evenly items-center gap-3 max-lg:flex-col">
+                                <div>
+                                    <div>
+                                        <h1 class="text-justify font-medium">Your Name</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-justify font-medium mt-[1.5rem]">Phone Number</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                    <div class="relative">
+                                        <h1 class="text-justify font-medium mt-[1.5rem]">Date of Reservation</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div>
+                                        <h1 class="text-justify font-medium">Email</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-justify font-medium mt-[1.5rem]">Number of Guests</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                    <div>
+                                        <h1 class="text-justify font-medium mt-[1.5rem]">Time of Reservation</h1>
+                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center">
+                                <div class="w-[93%] ml-[2.2rem]">
+                                    <h1 class="text-justify font-medium mt-[1.5rem]">Special Requests</h1>
+                                    <input type="text" placeholder="Enter Here" class="bg-white w-[94%] h-[5rem] pl-[1rem] pb-[3rem] rounded-[1rem] mt-[1rem]">
+                                </div>
+                                <div class="w-[10rem] h-[3rem] bg-primary rounded-[1.5rem] mt-[1.5rem] cursor-pointer hover:bg-tertiary/70">
+                                    <button class="mt-[0.7rem] font-medium text-white pl-[1.5rem] cursor-pointer">BOOK A TABLE</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-three bg-cover h-[35rem] w-[27rem] rounded-[1rem] mr-[22rem] max-2xl:mr-[12.5rem] max-xl:mr-[2.5rem] max-xl:h-[30rem] max-xl:w-[24rem] max-lg:hidden">
+                            <div class="text-white text-justify mt-[1.5rem] ml-[1.5rem] ">
+                                <h1 class="text-[1.5rem] font-medium max-lg:text-[1.2rem]">Address</h1>
+                                <p class="pt-[0.5rem] text-gray-200">Cordova 2041 Ln. Yeh, New York Sandwich</p>
+                            </div>
+                            <div class="text-white text-justify mt-[2.5rem] ml-[1.5rem] max-xl:mt-[1rem]">
+                                <h1 class="text-[1.5rem] font-medium max-lg:text-[1.2rem]">Contact</h1>
+                                <p class="pt-[0.5rem] text-gray-200">Phone: (132) 1234 213</p>
+                                <p class="pt-[0.5rem] text-gray-200">Email: emailnisiya@gmail.com</p>
+                            </div>
+                            <div class="text-white text-justify mt-[2.5rem] ml-[1.5rem] max-xl:mt-[1rem]">
+                                <h1 class="text-[1.5rem] font-medium max-lg:text-[1.2rem]">Open Time</h1>
+                                <p class="pt-[0.5rem] text-gray-100">Monday - Friday : 11:00 AM - 10:00 PM</p>
+                                <p class="pt-[0.5rem] text-gray-100">Saturday - Sunday : 9:00 AM - 11:00 PM</p>
+                            </div>
+                            <div class="text-white text-justify mt-[2.5rem] ml-[1.5rem] max-xl:mt-[1rem] max-lg:hidden">
+                                <h1 class="text-[1.5rem] font-medium ">Stay Connected</h1>
+                                <div class="flex justify-evenly items-center mt-[1.5rem]">
+                                    <div class="w-[3.5rem] h-[3.5rem] bg-primary rounded-[50%] text-center">
+                                        <i class="fa-brands fa-facebook text-[2.3rem] text-white mt-[0.57rem]"></i>
+                                    </div>
+                                    <div class="w-[3.5rem] h-[3.5rem] bg-primary rounded-[50%] text-center">
+                                        <i class="fa-brands fa-square-x-twitter text-[2.3rem] mt-[0.57rem] text-white"></i>
+                                    </div>
+                                    <div class="w-[3.5rem] h-[3.5rem] bg-primary rounded-[50%] text-center">
+                                        <i class="fa-brands fa-pinterest text-[2.3rem] mt-[0.57rem] text-white"></i>
+                                    </div>
+                                    <div class="w-[3.5rem] h-[3.5rem] bg-primary rounded-[50%] text-center">
+                                        <i class="fa-brands fa-square-instagram text-[2.3rem] mt-[0.57rem] text-white"></i>
+                                    </div>
+                                    <div class="w-[3.5rem] h-[3.5rem] bg-primary rounded-[50%] text-center">
+                                        <i class="fa-brands fa-youtube text-[2.3rem] mt-[0.57rem] text-white"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="h-[65rem] overflow-hidden max-xl:h-[55rem] max-lg:h-[105rem] max-sm:h-[95rem] max-2xs:h-[87rem]">
+                <div class="mt-[-1rem] bg-secondary max-xl:mt-[-0.3rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div>
+                    <div>
+                        <div class="pt-[7rem] text-center text-primary pb-[1rem] max-lg:pt-[4.5rem] max-sm:pt-[3rem]">
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i>
+                            <i class="fa-solid fa-diamond max-sm:text-[0.9rem]"></i> 
+                        </div>
+                        <div class="text-center text-primary">
+                            <h1 class="text-[1.2rem] font-medium max-sm:text-[1rem] max-2xs:text-[0.85rem]">MEET THE CHEF</h1>
+                        </div>
+                        <div class="text-center font-semibold">
+                            <h1 class="text-[2.5rem] text-primary max-sm:text-[1.5rem] max-2xs:text-[1.25rem]">The Master <span class="text-black">Behind the Menu</span></h1>
+                        </div> 
+                    </div>
+                    <div class="flex justify-evenly items-center mt-[3rem] max-lg:flex-col max-lg:gap-[2rem] max-2xs:mt-[2rem]">
+                        <div class="ml-[17rem] relative max-2xl:ml-[7.5rem] max-xl:ml-[0.5rem] max-lg:ml-0">
+                            <img class="w-[25rem] h-[25rem] rounded-t-[50%] rounded-[1rem] object-cover max-xl:w-[20rem] max-xl:h-[20rem] max-2xs:w-[18rem] max-2xs:h-[18rem]" src="/assets/images/executive.jpg">
+                            <div class="flex gap-[1.2rem] absolute bottom-[7.5rem] left-[4.7rem] max-xl:left-[2.3rem] max-xl:bottom-[6rem]">
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-facebook text-[2rem] text-white mt-[0.38rem]"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-x-twitter text-[2rem] mt-[0.35rem] text-white"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-pinterest text-[2rem] mt-[0.35rem] text-white"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-instagram text-[2rem] mt-[0.35rem] text-white"></i>
+                                </div>
+                            </div>
+                            <div class="text-center pt-[1rem]">
+                                <h1 class="text-[1.5rem] font-medium">Manang Linda</h1>
+                                <h1 class="text-primary">Executive Chef</h1>
+                            </div>
+                        </div>
+                        <div>
+                            <img class="w-[25rem] h-[25rem] rounded-[2rem] object-cover max-xl:w-[20rem] max-xl:h-[20rem] max-2xs:w-[18rem] max-2xs:h-[18rem]" src="/assets/images/sous chef.jpg">
+                            <div class="text-center pt-[1rem]">
+                                <h1 class="text-[1.5rem] font-medium">Manang Linda</h1>
+                                <h1 class="text-primary">Sous Chef</h1>
+                            </div>
+                        </div>
+                        <div class="mr-[17rem] max-2xl:mr-[7.5rem] max-xl:mr-[0.5rem] max-lg:mr-0">
+                            <img class="w-[25rem] h-[25rem] rounded-[2rem] object-cover max-xl:w-[20rem] max-xl:h-[20rem] max-2xs:w-[18rem] max-2xs:h-[18rem]" src="/assets/images/pastry.jpg">
+                            <div class="text-center pt-[1rem]">
+                                <h1 class="text-[1.5rem] font-medium">Manang Linda</h1>
+                                <h1 class="text-primary">Executive Chef</h1>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overflow-hidden">
+                <div class="rotate-[180deg] mb-[-7rem] max-xl:mb-[-4rem] max-lg:mb-[-3rem] max-xs:mb-[-1.5rem] max-2xs:mb-[-1rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="bg-[url('/assets/images/testimonials.jpg')] bg-cover h-[70rem] max-xl:h-[65rem] max-lg:h-[80rem] max-sm:h-[70rem] max-xs:h-[67rem]">
+                    <div>
+                        <div class="pt-[17rem] max-xl:pt-[10rem] max-sm:pt-[7rem]">
+                            <div class="text-center text-primary pb-[1rem]">
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i> 
+                            </div>
+                            <div class="text-center text-primary">
+                                <h1 class="text-[1.2rem] font-medium pb-[1rem] max-sm:pb-[0.5rem]">TESTIMONIALS</h1>
+                            </div>
+                            <div class="text-center font-semibold">
+                                <h1 class="text-[2.5rem] text-white max-sm:text-[2rem] max-xs:text-[1.5rem]">Testimonials from Our <br><span class="text-primary">Valued Guests</span></h1>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center gap-4 mt-[2rem] max-lg:flex-col">
+                            <div class="w-[35rem] h-[22.5rem] backdrop-blur-md bg-white/40 rounded-[1rem] border-2 border-gray-400 max-xl:w-[28rem] max-lg:w-[32rem] max-lg:h-[20.5rem] max-sm:w-[22rem] max-sm:h-[18rem] max-xs:w-[20rem] max-xs:h-[17rem] max-2xs:w-[18rem] max-2xs:h-[16.5rem]">
+                                <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                    <div class="text-[1.3rem] text-yellow-500 max-sm:text-[1rem]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h1 class="text-[1.3rem] text-white font-medium max-xs:text-[1rem]">5.0</h1>
+                                </div>
+                                <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                    <h1 class="text-[1.5rem] text-white font-medium max-sm:text-[1.2rem] max-2xs:text-[1.1rem]">Exeptional Dining Experience!</h1>
+                                    <p class="text-gray-300 pr-5 mt-[1rem] max-xl:mt-[0.5rem] max-sm:text-[0.8rem] max-xs:mt-[0.2rem] max-2xs:text-[0.75rem] max-xs:pr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas rem recusandae, sed eum similique fugiat officia voluptatem praesentium, enim sapiente dignissimos ipsa expedita nisi soluta. <span class="max-sm:hidden">Praesentium voluptatibus tempore maiores?</span></p>
+                                </div>
+                                <div class="flex items-center gap-3 relative mt-[2rem] ml-[1rem] max-xl:mt-[0.7rem] max-xs:mt-[0.5rem]">
+                                    <img class="w-[4rem] h-[4rem] rounded-[50%] border-1 border-white max-xs:w-[3.5rem] max-xs:h-[3.5rem]" src="/assets/images/pp 1.jpg">
+                                    <div class="w-[3.5rem] h-[3.5rem] border-2 border-white rounded-[50%] absolute top-1 left-[0.25rem]  max-xs:w-[3rem] max-xs:h-[3rem] max-sm:top-[0.25rem] max-2xs:top-[0.3rem]"></div>
+                                    <div class="mt-[0.3rem]">
+                                        <h1 class="text-white text-[1.2rem] max-xs:text-[1rem]">Theresa Webb</h1>
+                                        <p  class="text-gray-200 max-xs:text-[0.8rem]">Happy Guest</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="w-[35rem] h-[22.5rem] backdrop-blur-md bg-white/40 rounded-[1rem] border-2 border-gray-400 max-xl:w-[28rem] max-lg:w-[32rem] max-lg:h-[20.5rem] max-sm:w-[22rem] max-sm:h-[18rem] max-xs:w-[20rem] max-xs:h-[17rem] max-2xs:w-[18rem] max-2xs:h-[16.5rem]">
+                                    <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                        <div class="text-[1.3rem] text-yellow-500 max-sm:text-[1rem]">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <h1 class="text-[1.3rem] text-white font-medium max-xs:text-[1rem]">5.0</h1>
+                                    </div>
+                                    <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                        <h1 class="text-[1.5rem] text-white font-medium max-sm:text-[1.2rem] max-2xs:text-[1.1rem]">Exeptional Dining Experience!</h1>
+                                        <p class="text-gray-300 pr-5 mt-[1rem] max-xl:mt-[0.5rem] max-sm:text-[0.8rem] max-xs:mt-[0.2rem] max-2xs:text-[0.75rem] max-xs:pr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas rem recusandae, sed eum similique fugiat officia voluptatem praesentium, enim sapiente dignissimos ipsa expedita nisi soluta.<span class="max-sm:hidden">Praesentium voluptatibus tempore maiores?</span></p>
+                                    </div>
+                                    <div class="flex items-center gap-3 relative mt-[2rem] ml-[1rem] max-xl:mt-[0.7rem] max-xs:mt-[0.5rem]">
+                                        <img class="w-[4rem] h-[4rem] rounded-[50%] border-1 border-white max-xs:w-[3.5rem] max-xs:h-[3.5rem]" src="/assets/images/pp 1.jpg">
+                                        <div class="w-[3.5rem] h-[3.5rem] border-2 border-white rounded-[50%] absolute top-1 left-[0.25rem] max-xs:w-[3rem] max-xs:h-[3rem] max-sm:top-[0.25rem] max-2xs:top-[0.3rem]"></div>
+                                        <div class="mt-[0.3rem]">
+                                            <h1 class="text-white text-[1.2rem] max-xs:text-[1rem]">Theresa Webb</h1>
+                                            <p  class="text-gray-200 max-xs:text-[0.8rem]">Happy Guest</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[-6.5rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="h-[60rem] max-xl:h-[55rem] overflow-hidden max-lg:h-[122rem] max-sm:h-[113rem] max-2xs:h-[105rem]">
+                <div class="mt-[-6.5rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="w-full">
+                    <div>
+                        <div class="pt-[6rem] text-center text-primary pb-[1rem]">
+                            <i class="fa-solid fa-diamond"></i>
+                            <i class="fa-solid fa-diamond"></i>
+                            <i class="fa-solid fa-diamond"></i> 
+                        </div>
+                        <div class="text-center text-primary">
+                            <h1 class="text-[1.2rem] font-medium pb-[1rem]">NEWS & BLOGS</h1>
+                        </div>
+                        <div class="text-center font-semibold">
+                            <h1 class="text-[2.5rem]">Our Latest <span class="text-primary">News & Blogs</span></h1>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center mt-[2rem] gap-[4rem] max-lg:flex-col max-lg:gap-[2rem]">
+                            <div class="ml-[16rem] relative max-xl:ml-[3rem] max-lg:ml-0 max-sm:ml-[1.3rem] max-xs:ml-[0.75rem] max-2xs:ml-[0.5rem]">
+                                <img class="w-[25rem] h-[18rem] rounded-[1.5rem] object-cover max-xl:w-[22rem] max-lg:w-[40rem] max-lg:h-[20rem] max-sm:w-[24rem] max-sm:h-[18rem] max-xs:w-[22rem] max-2xs:w-[19rem] max-2xs:h-[16.5rem]" src="/assets/images/experience 1.png">
+                                <div class="w-[10rem] h-[2.5rem] backdrop-blur-md bg-white/10 border-2 border-white text-center absolute top-[14.5rem] left-[1rem] rounded-[1.5rem] cursor-pointer hover:bg-primary/50 max-lg:top-[16.5rem] max-sm:top-[14.5rem] max-2xs:top-[13rem]">
+                                    <button class="mt-[0.3rem] text-white cursor-pointer font-medium">Dining Experience</button>
+                                </div>
+                                <div>
+                                    <h1 class="text-gray-500 font-sm mt-[0.7rem] max-xs:text-[0.9rem]">BY JENNY LIM <span class="text-primary ml-[1rem] mr-[1rem] text-[1.2rem]">•</span> FEB 19, 2025</h1>
+                                    <h1 class="mt-[0.3rem] font-medium text-[1.35rem] max-lg:text-[2rem] max-sm:text-[1.3rem] max-sm:text-[1.09rem] max-2xs:text-[1rem]">5 Tips for the Perfect Romantic Dinner: <br> Creating an Unforgettable Experience</h1>
+                                    <p class="mt-[0.5rem] mb-[0.7rem] text-gray-500 max-sm:text-[0.95rem] max-xs:text-[0.9rem] max-2xs:text-[0.75rem]">Lorem ipsum dolor sit amet consectetur adipisicing <br class="max-lg:hidden"> elit, assumenda hic magnam!</p>
+                                    <div class="flex gap-3">
+                                        <ins class="text-primary cursor-pointer max-2xs:text-[0.8rem]">Read More</ins> 
+                                        <i class="fa-solid fa-arrow-right-long mt-[0.4rem] text-primary max-2xs:mt-[0.2rem]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="relative max-sm:ml-[1.3rem] max-xs:ml-[0.75rem] max-2xs:ml-[0.5rem]">
+                                <img class="w-[25rem] h-[18rem] rounded-[1.5rem] object-cover max-xl:w-[22rem] max-lg:w-[40rem] max-lg:h-[20rem] max-sm:w-[24rem] max-sm:h-[18rem] max-xs:w-[22rem] max-2xs:w-[19rem] max-2xs:h-[16.5rem]" src="/assets/images/chef's insights.webp">
+                                <div class="w-[8rem] h-[2.5rem]  backdrop-blur-md bg-white/10 border-2 border-white text-center absolute top-[14.5rem] left-[1rem] rounded-[1.5rem] cursor-pointer hover:bg-primary/50 max-lg:top-[16.5rem] max-sm:top-[14.5rem] max-2xs:top-[13rem]">
+                                    <button class="mt-[0.3rem] text-white cursor-pointer font-medium">Chef's Insights</button>
+                                </div>
+                                <div>
+                                    <h1 class="text-gray-500 font-sm mt-[0.7rem] max-xs:text-[0.9rem]">BY JENNY LIM <span class="text-primary ml-[1rem] mr-[1rem] text-[1.2rem]">•</span> FEB 19, 2025</h1>
+                                    <h1 class="mt-[0.3rem] font-medium text-[1.35rem] max-lg:text-[1.2rem] max-lg:text-[2rem] max-sm:text-[1.3rem] max-sm:text-[1.09rem] max-2xs:text-[1rem]">5 Tips for the Perfect Romantic Dinner: <br> Creating an Unforgettable Experience</h1>
+                                    <p class="mt-[0.5rem] mb-[0.7rem] text-gray-500 max-sm:text-[0.95rem] max-xs:text-[0.9rem] max-2xs:text-[0.75rem]">Lorem ipsum dolor sit amet consectetur adipisicing <br class="max-lg:hidden"> elit, assumenda hic magnam!</p>
+                                    <div class="flex gap-3">
+                                        <ins class="text-primary cursor-pointer max-2xs:text-[0.8rem]">Read More</ins> 
+                                        <i class="fa-solid fa-arrow-right-long mt-[0.4rem] text-primary max-2xs:mt-[0.2rem]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mr-[16rem] relative max-xl:mr-[3rem] max-lg:mr-0 max-sm:ml-[1.3rem] max-xs:ml-[0.75rem] max-2xs:ml-[0.5rem]">
+                                <img class="w-[25rem] h-[18rem] rounded-[1.5rem] object-cover max-xl:w-[22rem] max-lg:w-[40rem] max-lg:h-[20rem]  max-sm:w-[24rem] max-sm:h-[18rem] max-xs:w-[22rem] max-2xs:w-[19rem] max-2xs:h-[16.5rem]" src="/assets/images/experience 2.jpg">
+                                <div class="w-[10rem] h-[2.5rem]  backdrop-blur-md bg-white/10 border-2 border-white text-center absolute top-[14.5rem] left-[1rem] rounded-[1.5rem] cursor-pointer hover:bg-primary/50 max-lg:top-[16.5rem] max-sm:top-[14.5rem] max-2xs:top-[13rem]">
+                                    <button class="mt-[0.3rem] text-white cursor-pointer font-medium">Dining Experience</button>
+                                </div>
+                                <div>
+                                    <h1 class="text-gray-500 font-sm mt-[0.7rem] max-xs:text-[0.9rem]">BY JENNY LIM <span class="text-primary ml-[1rem] mr-[1rem] text-[1.2rem]">•</span> FEB 19, 2025</h1>
+                                    <h1 class="mt-[0.3rem] font-medium text-[1.35rem] max-lg:text-[1.2rem] max-lg:text-[2rem] max-sm:text-[1.3rem] max-sm:text-[1.09rem] max-2xs:text-[1rem]">5 Tips for the Perfect Romantic Dinner: <br> Creating an Unforgettable Experience</h1>
+                                    <p class="mt-[0.5rem] mb-[0.7rem] text-gray-500 max-sm:text-[0.95rem] max-xs:text-[0.9rem] max-2xs:text-[0.75rem]">Lorem ipsum dolor sit amet consectetur adipisicing <br class="max-lg:hidden"> elit, assumenda hic magnam!</p>
+                                    <div class="flex gap-3">
+                                        <ins class="text-primary cursor-pointer max-2xs:text-[0.8rem]">Read More</ins> 
+                                        <i class="fa-solid fa-arrow-right-long mt-[0.4rem] text-primary max-2xs:mt-[0.2rem]"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+        <section>
+            <div class="bg-secondary h-[80rem] overflow-hidden max-xl::h-[95rem] max-sm:h-[70rem] max-2xs:h-[60rem]">
+                <div>
+                    <div class="rotate-[180deg] mt-[-0.5rem]">
+                        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="pt-[6rem] text-center text-primary pb-[1rem] max-sm:pt-[3rem]">
+                            <i class="fa-solid fa-diamond"></i>
+                            <i class="fa-solid fa-diamond"></i>
+                            <i class="fa-solid fa-diamond"></i> 
+                        </div>
+                        <div class="text-center text-primary">
+                            <h1 class="text-[1.2rem] font-medium">FAQS</h1>
+                        </div>
+                        <div class="text-center font-semibold">
+                            <h1 class="text-[2.5rem] max-xs:text-[2rem] max-2xs:text-[1.5rem]">Question?<span class="text-primary ml-[0.5rem]">Look here.</span></h1>
+                        </div>
+                        <div class="flex justify-center items-center gap-7 mt-[2rem] max-xl:flex-col-reverse">
+                            <div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] flex justify-between items-center shadow-sm relative max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem] max-xs:text-[1rem] max-2xs:text-[0.8rem]">Where is your restaurant located?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn max-xs:text-[1rem]" data-content="faq_content_1"></i>
+                                </div>
+                                <div class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute faq_content_1 hidden overflow-hidden max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Wee are located at LOCATION!!!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Exactly we are located at luyo sa among balay nga wala ka kabalo then mangutana raka asa ni dapit dayon makatoltol naka.</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem] max-xs:text-[1rem] max-2xs:text-[0.8rem]">What type of cuisine do you serve?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn max-xs:text-[1rem]" data-content="faq_content_2"></i>
+                                </div>
+                                <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute overflow-hidden hidden faq_content_2 max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Di ko mo saba!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Joke langs! Bisag unsa nga pagkaon pwede ilaga, iring or unsa pana diha basta mabusog mong tanan libre ra nya libre nasad ang lungon.</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem]  max-xs:text-[1rem] max-2xs:text-[0.8rem]">What are your restaurant's opening and closing hours?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn  max-xs:text-[1rem]" data-content="faq_content_3"></i>
+                                </div>
+                                <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden overflow-hidden faq_content_3 max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Di mi manirado!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Bisag walay tawo mangabli gihapon mi og naay tawo ara nami manirado ingon ana ka class among restaurant sheeesh!!</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem]  max-xs:text-[1rem] max-2xs:text-[0.8rem]">What is your cancellation policy for reservations?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn max-xs:text-[1rem]" data-content="faq_content_4"></i>
+                                </div>
+                                <div class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute overflow-hidden hidden faq_content_4 max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Ahh di mi mo dawat ana!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Way cancel2 ni amoa og imong e cancel ikaw nalang among e cancel sa life bleee tuga2 kag reserve nya imong e cancel!!</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>    
+                                </div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem]  max-xs:text-[1rem] max-2xs:text-[0.8rem]">Do you have any ongoing promotions or discounts?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn  max-xs:text-[1rem]" data-content="faq_content_5"></i>
+                                </div>
+                                <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden overflow-hidden faq_content_5 max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Wa oy kinsa man ka!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Di mi mohatag og discount sa mga maot dapat mga gwapo rajud og maot ka aynalang pangayo og discount BLEEEE!!</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[40rem] h-[4.5rem] bg-white rounded-[1rem] shadow-sm mt-[1rem] flex justify-between items-center max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[3.5rem]">
+                                    <h1 class="text-[1.1rem] font-medium ml-[1rem]  max-xs:text-[1rem] max-2xs:text-[0.8rem]">What payment methods do you accept?</h1>
+                                    <i class="fa-solid fa-plus text-[1.5rem] mr-[1rem] cursor-pointer js-faq-btn  max-xs:text-[1rem]" data-content="faq_content_6"></i>
+                                </div>
+                                <div  class="w-[40rem] h-[6.5rem] bg-white mt-[-0.8rem] rounded-b-[1rem] shadow-sm absolute hidden overflow-hidden faq_content_6 max-sm:w-[25rem] max-xs:w-[22rem] max-2xs:w-[18.5rem] max-2xs:h-[5.5rem]">
+                                    <div class="relative">
+                                        <div class="text-gray-500">
+                                            <div class="font-medium ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.9rem]">Bisag unsa!!</div>
+                                            <div class="text-[0.9rem] ml-[1rem] pt-[0.5rem] max-sm:pt-[0.2rem] max-2xs:text-[0.7rem]">Pwede imong alkansiya og wa ka nya og wajud kay sulod sa alkansiya inyo lang balay para nice!</div>
+                                        </div>
+                                        <div class="text-tertiary/10">
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute top-[1rem] left-[-0.5rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[1.5rem] absolute bottom-[-2rem] left-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute top-[6rem] right-[0rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2rem] absolute"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-[3rem] left-[5rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3rem] absolute top-[3rem] right-[5rem] max-2xs:top-[3.5rem] max-2xs:right-[4rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[4rem] absolute bottom-[-0.5rem] right-[15rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[5rem] absolute top-[-1rem] left-[12rem] max-sm:left-[10rem] max-2xs:top-[-3rem] max-2xs:left-[8rem]"></i>
+                                            </div>
+                                            <div class="max-sm:hidden">
+                                                <i class="fa-solid fa-circle text-[2.5rem] absolute top-0 right-[10rem]"></i>
+                                            </div>
+                                            <div>
+                                                <i class="fa-solid fa-circle text-[3.5rem] absolute top-[-1rem] right-[-0.5rem]"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="flex flex-col items-center sticky">
+                                <div class="bg-three h-[20rem] w-[27rem] bg-cover rounded-[1rem] max-sm:w-[20rem] max-sm:h-[15rem] max-2xs:w-[18rem]">
+                                    <div class="text-center">
+                                        <div class="relative">
+                                            <i class="fa-solid fa-comment-dots text-primary text-[3.5rem] mt-[2rem] max-sm:text-[2.5rem] max-sm:mt-[1rem]"></i>
+                                            <i class="fa-regular fa-comment-dots text-white text-[3.8rem] absolute top-[1.95rem] left-[11.6rem] max-sm:text-[2.8rem] max-sm:left-[8.6rem] max-sm:top-[0.95rem] max-2xs:left-[7.6rem] max-2xs:top-[0.87rem]"></i>
+                                        </div>
+                                        <div>
+                                            <h1 class="mt-[1.5rem] text-white text-[1.5rem] font-medium max-sm:text-[1.3rem] max-sm:mt-[1rem] max-2xs:text-[1rem]">You have different questions?</h1>
+                                            <p class="mt-[1rem] text-gray-300 max-sm:mt-[0.5rem] max-2xs:text-[0.9rem]">Our team will answer all your questions.<br> We ensure a quick response.</p>
+                                        </div>
+                                        <div class="w-[10rem] h-[3rem] bg-primary rounded-[1.5rem] mt-[1.5rem] ml-[8.3rem] cursor-pointer hover:bg-tertiary/70 max-sm:ml-[5.3rem] max-sm:mt-[1rem] max-2xs:ml-[4.1rem]">
+                                            <button class="mt-[0.65rem] text-white font-medium cursor-pointer">Contact Us</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="w-[23rem] h-[9rem] bg-white mt-[1.2rem] rounded-[1rem] flex justify-center items-center gap-3 max-xl:hidden">
+                                    <div class="w-[4rem] h-[4rem] bg-secondary text-center rounded-[50%]">
+                                        <i class="fa-solid fa-phone text-primary text-[2.2rem] mt-[0.8rem]"></i>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-gray-500">Your Comfort, Our Priority</h1>
+                                        <h1 class="text-[1.3rem] font-medium">24/7 Service</h1>
+                                        <h1 class="text-[0.9rem] text-gray-400">(123) 456-78910 </h1>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="h-[67rem] overflow-hidden max-2xl:h-[65rem] max-lg:h-[55rem] max-sm:h-[45rem] max-xs:h-[40rem] max-2xs:h-[30rem]">
+                <div>
+                    <div class="bg-secondary mt-[-1.5rem] max-2xl:mt-[-0.9rem] max-lg:mt-[-0.2rem] max-sm:mt-[-0.1rem]">
+                        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                    </div> 
+                    <div>
+                        <div>
+                            <div class="pt-[6rem] text-center text-primary pb-[1rem] max-sm:pt-[4rem] max-xs:pt-[3rem] max-2xs:pt-[1.5rem]">
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i> 
+                            </div>
+                            <div class="text-center text-primary">
+                                <h1 class="text-[1.2rem] font-medium max-sm:text-[1rem] max-2xs:text-[0.9rem]">FOLLOW US</h1>
+                            </div>
+                            <div class="text-center font-semibold">
+                                <h1 class="text-[2.5rem] max-sm:text-[2rem] max-2xs:text-[1.5rem]">Follow Us On<span class="text-primary ml-[0.5rem]">Instagram</span></h1>
+                            </div>  
+                        </div>
+                        <div>
+                            <div class="grid grid-cols-6 grid-rows-4 gap-3 mt-[2rem] ml-[10rem] mr-[10rem] rounded-[1.3rem] max-xl:ml-[2rem] max-xl:mr-[2rem] max-sm:hidden">
+                                <div class="row-span-2 w-[100%] rounded-[1.3rem] ">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f1.jpg">
+                                </div>
+                                <div class="row-span-2 w-[100%] rounded-[1.3rem] max-lg:h-[10rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f2.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-1 row-start-3 w-[100%]rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f3.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-2 row-start-3 w-[100%] rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f4.jpg">
+                                </div>
+                                <div class="col-span-2 row-span-4 col-start-3 row-start-1rounded-[1.3rem]">
+                                    <img class="h-[100%] w-[100%] rounded-[1.3rem] object-cover" src="/assets/images/f5.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-5 row-start-1 w-[100%] rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f6.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-6 row-start-1 w-[100%] rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f7.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-5 row-start-3 w-[100%] rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f8.jpg">
+                                </div>
+                                <div class="row-span-2 col-start-6 row-start-3 w-[100%] rounded-[1.3rem]">
+                                    <img class="w-[100%] h-[12rem] rounded-[1.3rem] object-cover max-lg:h-[10rem]" src="/assets/images/f9.jpg">
+                                </div>
+                            </div>
+                            <div class="hidden max-sm:block">
+                                <img class="w-[80%] h-[40%] ml-[2.7rem] max-xs:ml-[2.4rem] max-2xs:ml-[2rem]" src="/assets/images/qr.png">
+                            </div>
+                            <div class="w-[8rem] h-[2.5rem] bg-primary text-center rounded-[1.2rem] mt-[2rem] ml-[46.8%] hover:bg-tertiary/70 cursor-pointer max-lg:ml-[42%] max-sm:ml-[35.5%] max-2xs:ml-[32%] max-sm:mt-[1rem] max-2xs:mt-[0.5rem]">
+                                <button class="mt-[0.45rem] text-white font-medium cursor-pointer"><a href="https://www.instagram.com/cjcorestaurant/">FOLLOW US</a></button>
+                            </div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="bg-tertiary h-[40rem] overflow-hidden max-xl:h-[7rem] max-sm:h-[5rem]">
+                <div class="rotate-[180deg] max-sm:mt-[0.2rem]">
+                    <svg class="mt-[-0.5rem]" id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,20L10,30C20,40,40,60,60,66.7C80,73,100,67,120,63.3C140,60,160,60,180,53.3C200,47,220,33,240,28.3C260,23,280,27,300,35C320,43,340,57,360,58.3C380,60,400,50,420,38.3C440,27,460,13,480,21.7C500,30,520,60,540,63.3C560,67,580,43,600,43.3C620,43,640,67,660,78.3C680,90,700,90,720,86.7C740,83,760,77,780,71.7C800,67,820,63,840,66.7C860,70,880,80,900,71.7C920,63,940,37,960,30C980,23,1000,37,1020,46.7C1040,57,1060,63,1080,65C1100,67,1120,63,1140,55C1160,47,1180,33,1200,31.7C1220,30,1240,40,1260,41.7C1280,43,1300,37,1320,36.7C1340,37,1360,43,1380,48.3C1400,53,1420,57,1430,58.3L1440,60L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div>
+                    <div class="text-white flex justify-evenly mt-[5rem] max-xl:hidden">
+                        <div>
+                            <div class="flex justify-start items-start text-white gap-2">
+                                <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%]">
+                                    <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+                                </div>
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold">CjCo</h1>
+                                    <h1 class="text-[0.7rem] text-gray-300">RESTAURANT</h1>
+                                </div>
+                            </div>
+                            <div class="text-justify mt-[2rem] text-gray-300">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. <br> adipisicing elit, sed do sadamsad awdasdadasdasf sa <br> asdaqaswdas dhdgasdjgasd asdawds dsad magna.</p>
+                            </div>
+                            <div class="flex justify-evenly items-start mt-[2.5rem] ml-[-1.5rem]">
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-facebook text-[2rem] text-white mt-[0.4rem]"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-x-twitter text-[2rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-pinterest text-[2rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-instagram text-[2rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[3rem] h-[3rem] backdrop-blur-xl bg-white/40 border-2 border-white rounded-[50%] text-center">
+                                    <i class="fa-brands fa-youtube text-[2rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h1>Links</h1>
+                                <div class="mt-[2rem] text-gray-300">
+                                    <h1>FAQs</h1>
+                                    <h1 class="mt-[1rem]">Our Staff</h1>
+                                    <h1 class="mt-[1rem]">Contact Us</h1>
+                                    <h1 class="mt-[1rem]">About Us</h1>
+                                    <h1 class="mt-[1rem]">Testimonials</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h1>Contact Info</h1>
+                                <div class="mt-[2rem] text-gray-300">
+                                    <h1 class="">(123) 456-78910 </h1>
+                                    <h1 class="mt-[1rem]">gmailnisiya@gmail.com</h1>
+                                    <h1 class="mt-[1rem]">1234 Sprite Ln, Cordo <br> New York Sandwich</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div>
+                                <h1>Get the latest information</h1>
+                                <div class="mt-[2rem] relative">
+                                    <input class="w-[20rem] h-[3rem] backdrop-blur-xl bg-white/40 text-white pl-[1rem] rounded-[0.8rem]" type="text" placeholder="Email address">
+                                    <div class="w-[3rem] h-[3rem] bg-primary rounded-r-[0.8rem] absolute top-0 right-0">
+                                        <i class="fa-solid fa-caret-right text-[3.5rem] mt-[-0.3rem] ml-[0.3rem] ab"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="border-b-1 border-b-white w-[82.7%] mt-[4rem] ml-[11.5rem] max-2xl:ml-[8.5rem] max-xl:hidden"></div>
+                    <div class="flex justify-between items-center mt-[3rem] max-xl:mt-[1rem] max-sm:justify-center">
+                        <div class="text-white ml-[11.5rem] max-xl:ml-[5rem] max-lg:ml-[2rem] max-sm:ml-0">
+                            <h1>Copyright 2025</h1>
+                        </div>
+                        <div class="text-white mr-[11.5rem] max-xl:mr-[5rem] max-lg:mr-[2rem] max-sm:hidden">
+                            <h1>User Terms & Condition | Privacy Policy</h1>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="/assets/js/index.js"></script>
+</body>
+</html>

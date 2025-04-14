@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CjCo Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #fc5f0a;
+          --color-secondary: #faf4e6;
+          --color-tertiary: #242424;
+          --background-workmates : 'work mates.png';
+          --breakpoint-2xl: 1540px;
+          --breakpoint-2xs: 21rem;
+          --breakpoint-xs: 23.75rem;
+        }
+
+        .bg-two {
+            background-image: url(/assets/images/work\ mates.png);
+        }
+
+        .bg-three {
+            background-image: url(/assets/images/ambot.jpg);
+        }
+
+        .bg-garlic {
+            background-image: url(assets/images/garlic\ bread\ w\ cheese.jpg);
+        }
+
+        .bg-greek {
+            background-image: url(assets/images/greek\ feta\ salad.jpg);
+        }
+
+        .bg-mozzarella {
+            background-image: url(assets/images/mozzarella\ stick.jpg);
+        }
+
+        .bg-pesto {
+            background-image: url(assets/images/pesto\ zucchini.jpg);
+        }
+
+        .bg-roll {
+            background-image: url(assets/images/vegetable\ spring\ roll.jpg);
+        }
+
+        .bg-spiced {
+            background-image: url(assets/images/spiced\ potato.jpg);
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-full m-0 p-0 box-border">
+        <header>
+            <div class="flex justify-center items-center">
+                <div class="flex justify-between w-[80%] bg-transparent border-b-1 border-b-gray-200 absolute top-1">
+                    <div class="flex gap-1.5 mt-[0.7rem] mb-[0.7rem]">
+                         <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%] text-white">
+                             <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+                         </div>
+                         <div>
+                             <h1 class="text-[1.5rem] font-bold text-white">CjCo</h1>
+                             <h1 class="text-[0.7rem] text-gray-300">RESTAURANT</h1>
+                         </div>
+                    </div>
+                    <div class="mt-[1.5rem] mb-[0.7rem]">
+                        <div class="hidden max-lg:block">
+                            <i id="headerButton" class="fa-solid fa-bars text-[1.3rem] text-white cursor-pointer"></i>
+                        </div>
+                        <div>
+                            <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="./home.html">Home</a></li>
+                                <li class="border-b-white border-b-[1px]"><a href="./menu.html"></a>Menu</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>About Us</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem] max-lg:hidden">
+                         <button class="p-2.5 text-white pl-[1.7rem] cursor-pointer">BOOK A TABLE</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!--Open Header-->
+            <div id="headerContent" class="w-full h-full bg-secondary absolute top-[-1rem] z-[1] hidden transition">
+                <ul class="flex flex-col items-center gap-3 cursor-pointer text-black mt-[3.5rem] text-center">
+                    <div class="ml-[94%] absolute top-[2rem]">
+                        <i id="headerClose" class="fa-solid fa-xmark text-[1.5rem]"></i>
+                    </div>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="/home.html"></a>Home</li>
+                    <li class="border-b-black border-b-[1px] w-full"><a href="#"></a>Menu</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>About Us</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Gallery</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Blogs</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Contact Us</li>
+                </ul>
+            </div>
+            <div class="w-full overflow-hidden">
+                <div class="w-full overflow-hidden">
+                    <div class="bg-[url('/assets/images/menu.jpg')] bg-cover bg-center h-[30rem] max-lg:h-[70%] max-sm:h-[55%]">
+                        <div class="text-center text-white text-[3rem] font-medium">
+                            <h1 class="pt-[12rem]">Our Menu</h1>
+                        </div>
+                    </div> 
+                <div class="mt-[-6.5rem] max-2xl:mt-[-5rem] max-xl:mt-[-4rem] max-lg:mt-[-3rem] max-sm:mt-[-1.35rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,  63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+            </div>
+        </section>
+        <section class="mb-[10rem]">
+            <div>
+                <div>
+                    <div>
+                        <div class="text-primary text-center">
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                            <i class="fa-solid fa-diamond max-lg:text-[0.9rem] max-sm:text-[0.7rem]"></i>
+                        </div>
+                        <div class="text-center font-medium">
+                            <h1 class="text-primary text-[1.5rem]">FOOD  & PASTRY</h1>
+                        </div>
+                        <div class="text-center font-medium">
+                            <h1 class="text-[2.5rem]">Timeless <span class="text-primary">Culinary Delights</span></h1>
+                        </div>
+                    </div>
+                    <div>
+                       <div class="flex justify-center items-center gap-[2rem] mt-[3rem]">
+                        <div class="w-[40%] h-[40rem] bg-red-200">
+                            <div class="w-[15rem] h-[3.5rem] bg-primary">
+                                <h2 class="text-white text-center pt-[0.8rem] font-medium">Starters & Appetizers</h2>
+                            </div>
+                            <div class="flex justify-start items-center mt-[2rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center mt-[0.5rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center mt-[0.5rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center mt-[0.5rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center mt-[0.5rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                            <div class="flex justify-start items-center mt-[0.5rem]">
+                                <div class="w-[6rem] h-[6rem] bg-blue-200 rounded-[50%]">
+                                </div>
+                                <div>
+                                    <h1>BUWAD</h1>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="w-[40%] h-[40rem] bg-red-200">
+                            <img class="w-[70%] h-[40rem] rounded-t-[50%] object-cover" src="/assets/images/appetizer.jpg">
+                        </div>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </section>    
+    </div>
+</body>
+</html>
