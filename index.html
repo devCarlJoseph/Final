@@ -4,9 +4,161 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CjCo Restaurant</title>
-    <link rel="shortcut icon" href="assets/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #fc5f0a;
+          --color-secondary: #faf4e6;
+          --color-tertiary: #242424;
+          --background-workmates : 'work mates.png';
+          --breakpoint-2xl: 1540px;
+          --breakpoint-2xs: 21rem;
+          --breakpoint-xs: 23.75rem;
+        }
+
+        .bg-two {
+            background-image: url(/assets/images/work\ mates.png);
+        }
+
+        .bg-three {
+            background-image: url(/assets/images/ambot.jpg);
+        }
+
+        .bg-garlic {
+            background-image: url(assets/images/garlic\ bread\ w\ cheese.jpg);
+        }
+
+        .bg-greek {
+            background-image: url(assets/images/greek\ feta\ salad.jpg);
+        }
+
+        .bg-mozzarella {
+            background-image: url(assets/images/mozzarella\ stick.jpg);
+        }
+
+        .bg-pesto {
+            background-image: url(assets/images/pesto\ zucchini.jpg);
+        }
+
+        .bg-roll {
+            background-image: url(assets/images/vegetable\ spring\ roll.jpg);
+        }
+
+        .bg-spiced {
+            background-image: url(assets/images/spiced\ potato.jpg);
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body>
-    
+    <div class="w-full h-full m-0 p-0 box-border">
+        <div>
+            <div class="flex justify-center items-center gap-[2rem] mt-[7rem]">
+                <div>
+                    <img class="w-[40rem] h-[45rem] object-cover rounded-[2rem]" src="assets/images/resman.png">
+                </div>
+                <div class="w-[40rem]">
+                    <div class="text-white">
+                        <div class="flex gap-1.5 ">
+                            <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%] text-white">
+                                <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+                            </div>
+                            <div>
+                                <h1 class="text-[1.5rem] font-bold text-black">CjCo</h1>
+                                <h1 class="text-[0.7rem] text-gray-500">RESTAURANT</h1>
+                            </div>
+                       </div>
+                       <div class="flex gap-2 text-[1.2rem] font-medium mt-[2.5rem]">
+                            <span class="text-primary">//</span>
+                            <h1 class="text-gray-500">Coming Soon</h1>
+                       </div>
+                       <div>
+                            <div>
+                                <h1 class="text-black text-[3rem] font-medium">Get Notified When <span class="text-primary">We Launch!</span></h1>
+                            </div>
+                       </div>
+                       <div class="text-black">
+                            <div class="flex justify-between items-center text-center mt-[1rem] mb-[1rem] mr-[5rem]">
+                                <div>
+                                    <h1 id="days" class="text-[4rem] font-medium">00</h1>
+                                    <p class="text-[1.5rem] text-gray-500">Days</p>
+                                </div>
+                                <div class="border-r-2 border-gray-200 h-[9rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 id="hours" class="text-[4rem] font-medium">00</h1>
+                                    <p class="text-[1.5rem] text-gray-500">Hours</p>
+                                </div>
+                                <div class="border-r-2 border-gray-200 h-[9rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 id="minutes" class="text-[4rem] font-medium">00</h1>
+                                    <p class="text-[1.5rem] text-gray-500">Minutes</p>
+                                </div>
+                                <div class="border-r-2 border-gray-200 h-[9rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 id="seconds" class="text-[4rem] font-medium">00</h1>
+                                    <p class="text-[1.5rem] text-gray-500">Seconds</p>
+                                </div>
+                            </div>
+                       </div>
+                       <div>
+                            <div class="mt-[1rem]">
+                                <p class="text-[1] text-gray-500">Get notified when the restaurant open:</p>
+                            </div>
+                       </div>
+                       <div class="mt-[1rem]">
+                            <form action="">
+                                <input class="border-1 border-gray-500 w-[15rem] h-[3rem] rounded-[2rem] pl-4 text-gray-500" type="email" placeholder="Enter your email" required>
+                                <input class="bg-primary w-[8rem] h-[2.5rem] rounded-[2rem] cursor-pointer" type="submit" value="Subscribe">
+                            </form>
+                       </div>
+                       <div>
+                            <div class="flex gap-3 mt-[1.5rem] text-center">
+                                <div class="w-[2.5rem] h-[2.5rem] bg-primary rounded-[50%] text-center">
+                                    <i class="fa-brands fa-facebook text-[1.8rem] text-white mt-[0.4rem]"></i>
+                                </div>
+                                <div class="w-[2.5rem] h-[2.5rem] bg-primary rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-x-twitter text-[1.8rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[2.5rem] h-[2.5rem] bg-primary rounded-[50%] text-center">
+                                    <i class="fa-brands fa-pinterest text-[1.8rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[2.5rem] h-[2.5rem] bg-primary rounded-[50%] text-center">
+                                    <i class="fa-brands fa-square-instagram text-[1.8rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                                <div class="w-[2.5rem] h-[2.5rem] bg-primary rounded-[50%] text-center">
+                                    <i class="fa-brands fa-youtube text-[1.8rem] mt-[0.4rem] text-white"></i>
+                                </div>
+                            </div>
+                       </div>
+                       <div class="mt-[1rem]">
+                            <p class="text-gray-500">Copyright 2025 <span class="text-primary">CjCo. </span>Website. All Rights Reserve</p>
+                       </div>
+                       <div class="mt-[1.5rem]">
+                            <a href="./pages/home.html"><button class="bg-primary w-[12.5rem] h-[2.5rem] rounded-[2rem] cursor-pointer">Visit the CjCo Website</button></a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var countDownDate = new Date("Apr 17, 2025 00:00:00").getTime();
+            var x = setInterval(function () {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+                document.getElementById("days").innerHTML = days;
+                document.getElementById("hours").innerHTML = hours;
+                document.getElementById("minutes").innerHTML = minutes;
+                document.getElementById("seconds").innerHTML = seconds;
+
+            }, 1000); 
+    </script>
 </body>
 </html>
