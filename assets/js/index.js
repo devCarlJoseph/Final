@@ -72,3 +72,6 @@ $(document).ready(function () {
         $('.' + closeVideo).toggleClass('hidden');
     })
 });
+
+
+

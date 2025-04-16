@@ -49,6 +49,9 @@
         }
       </style>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
 </head>
 <body>
     <div class="w-full h-full m-0 p-0 box-border">
@@ -805,40 +808,40 @@
                             <div class="flex justify-evenly items-center gap-3 max-lg:flex-col">
                                 <div>
                                     <div>
-                                        <h1 class="text-justify font-medium">Your Name</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                        <label class="text-justify font-medium" for="name">Your Name</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="text" id="name" placeholder="Ex. Juan Dela Cruz">
                                     </div>
                                     <div>
-                                        <h1 class="text-justify font-medium mt-[1.5rem]">Phone Number</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                        <label class="text-justify font-medium mt-[1.5rem]" for="number">Phone Number</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="text" id="number" placeholder="">
                                     </div>
-                                    <div class="relative">
-                                        <h1 class="text-justify font-medium mt-[1.5rem]">Date of Reservation</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                    <div>
+                                        <label class="text-justify font-medium mt-[1.5rem]" for="date">Date of Reservation</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="text" id="date" placeholder="">
                                     </div>
                                 </div>
                                 <div>
                                     <div>
-                                        <h1 class="text-justify font-medium">Email</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                        <label class="text-justify font-medium mt-[1.5rem]" for="email">Email</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="email" id="email" placeholder="">
                                     </div>
                                     <div>
-                                        <h1 class="text-justify font-medium mt-[1.5rem]">Number of Guests</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                        <label class="text-justify font-medium mt-[1.5rem]" for="guest">Number of Guests</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="text" id="guest" placeholder="">
                                     </div>
                                     <div>
-                                        <h1 class="text-justify font-medium mt-[1.5rem]">Time of Reservation</h1>
-                                        <input type="text" placeholder="Ex. Juan Dela Cruz" class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]">
+                                        <label class="text-justify font-medium mt-[1.5rem]" for="time">Time of Reservation</label>
+                                        <input class="bg-white w-[16rem] h-[3rem] pl-[1rem] rounded-[1rem] mt-[1rem] outline-none max-xl:w-[14rem] max-lg:w-[35rem] max-sm:w-[20rem] max-2xs:w-[17rem]" type="text" id="time" placeholder="">
                                     </div>
                                 </div>
                             </div>
                             <div class="flex flex-col items-center">
-                                <div class="w-[93%] ml-[2.2rem]">
-                                    <h1 class="text-justify font-medium mt-[1.5rem]">Special Requests</h1>
-                                    <input type="text" placeholder="Enter Here" class="bg-white w-[94%] h-[5rem] pl-[1rem] pb-[3rem] rounded-[1rem] mt-[1rem]">
+                                <div class="w-[93%] ml-[2.2rem] mt-[1.5rem]">
+                                    <label class="text-justify font-medium" for="message">Send us Message</label>
+                                    <input class="bg-white w-[94%] h-[5rem] pl-[1rem] pb-[3rem] rounded-[1rem] mt-[1rem]" type="text" id="message" name="name" placeholder="Enter Here">
                                 </div>
-                                <div class="w-[10rem] h-[3rem] bg-primary rounded-[1.5rem] mt-[1.5rem] cursor-pointer hover:bg-tertiary/70">
-                                    <button class="mt-[0.7rem] font-medium text-white pl-[1.5rem] cursor-pointer">BOOK A TABLE</button>
+                                    <div class="w-[10rem] h-[3rem] bg-primary rounded-[1.5rem] mt-[1.5rem] cursor-pointer hover:bg-tertiary/70">
+                                    <button id="contactUs" class="mt-[0.7rem] font-medium text-white pl-[1.5rem] cursor-pointer" onclick="sendGMail()">BOOK A TABLE</button>
                                 </div>
                             </div>
                         </div>
@@ -1556,5 +1559,39 @@
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="/assets/js/index.js"></script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+                publicKey: "tkkLcH0t-r38mrpF4",
+            });
+        })();
+        </script>
+    <script>
+        function sendGMail() {
+            var content = {
+            name: document.getElementById("name").value,
+            email: document.getElementById("email").value,
+            number: document.getElementById("number").value,
+            guests: document.getElementById("guest").value,
+            date: document.getElementById("date").value,
+            time: document.getElementById("time").value,
+            message: document.getElementById("message").value,
+        }
+
+        emailjs.send('service_h91cy5f', 'template_6qn8cid', content).then((res) => {
+        document.getElementById("name").value = "";
+        document.getElementById("email").value = "";
+        document.getElementById("number").value = "";
+        document.getElementById("guest").value = "";
+        document.getElementById("date").value = "";
+        document.getElementById("time").value = "";
+        document.getElementById("message").value = "";
+        console.log(res);
+        alert("thank you for contacting us!");
+        }).catch((err) => console.log(err));
+
+    }
+
+    </script>
 </body>
 </html>
