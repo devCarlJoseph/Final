@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CjCo Restaurant</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="/assets/images/favicon.png" type="image/x-icon">
+    <style type="text/tailwindcss">
+        @theme {
+          --color-primary: #fc5f0a;
+          --color-secondary: #faf4e6;
+          --color-tertiary: #242424;
+          --background-workmates : 'work mates.png';
+          --breakpoint-2xl: 1540px;
+          --breakpoint-2xs: 21rem;
+          --breakpoint-xs: 23.75rem;
+        }
+
+        .bg-two {
+            background-image: url(/assets/images/work\ mates.png);
+        }
+
+        .bg-three {
+            background-image: url(/assets/images/ambot.jpg);
+        }
+
+        .bg-garlic {
+            background-image: url(assets/images/garlic\ bread\ w\ cheese.jpg);
+        }
+
+        .bg-greek {
+            background-image: url(assets/images/greek\ feta\ salad.jpg);
+        }
+
+        .bg-mozzarella {
+            background-image: url(assets/images/mozzarella\ stick.jpg);
+        }
+
+        .bg-pesto {
+            background-image: url(assets/images/pesto\ zucchini.jpg);
+        }
+
+        .bg-roll {
+            background-image: url(assets/images/vegetable\ spring\ roll.jpg);
+        }
+
+        .bg-spiced {
+            background-image: url(assets/images/spiced\ potato.jpg);
+        }
+
+        .bg-about-us {
+            background-image: url(/assets/images/about\ us.jpg);
+        }
+      </style>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full h-full m-0 p-0 box-border">
+        <header>
+            <div class="flex justify-center items-center">
+                <div class="flex justify-between w-[80%] bg-transparent border-b-1 border-b-gray-200 absolute top-1 overflow-hidden">
+                    <div class="flex gap-1.5 mt-[0.7rem] mb-[0.7rem]">
+                         <div class="w-[3rem] h-[3rem] bg-primary rounded-[50%] text-white">
+                             <i class="fa-solid fa-bowl-food text-[2rem] ml-[0.5rem] mt-[0.45rem]"></i>
+                         </div>
+                         <div>
+                             <h1 class="text-[1.5rem] font-bold text-white">CjCo</h1>
+                             <h1 class="text-[0.7rem] text-gray-300">RESTAURANT</h1>
+                         </div>
+                    </div>
+                    <div class="mt-[1.5rem] mb-[0.7rem]">
+                        <div class="hidden max-lg:block">
+                            <i id="headerButton" class="fa-solid fa-bars text-[1.3rem] text-white cursor-pointer"></i>
+                        </div>
+                        <div>
+                            <ul class="flex gap-[2rem] cursor-pointer text-white max-lg:hidden">
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="./home.html">Home</a></li>
+                                <li class="border-b-white border-b-[1px]"><a href="./menu.html">Menu</a></li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="./about.html">About Us</a></li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Gallery</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Blogs</li>
+                                <li class="hover:border-b-white hover:border-b-[1px]"><a href="#"></a>Contact Us</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="bg-white/10 h-[3rem] w-[10rem] border-white border-1 rounded-[1.5rem] mt-[0.8rem] max-lg:hidden">
+                         <button class="p-2.5 text-white pl-[1.7rem] cursor-pointer">BOOK A TABLE</button>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section>
+            <!--Open Header-->
+            <div id="headerContent" class="w-full h-full bg-secondary absolute top-[-1rem] z-[1] hidden transition">
+                <ul class="flex flex-col items-center gap-3 cursor-pointer text-black mt-[3.5rem] text-center">
+                    <div class="ml-[94%] absolute top-[2rem]">
+                        <i id="headerClose" class="fa-solid fa-xmark text-[1.5rem]"></i>
+                    </div>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="/home.html">Home</a></li>
+                    <li class="border-b-black border-b-[1px] w-full"><a href="./menu.html">Menu</a></li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="./about.html">About Us</a></li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Gallery</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Blogs</li>
+                    <li class="hover:border-b-black hover:border-b-[1px] hover:w-full"><a href="#"></a>Contact Us</li>
+                </ul>
+            </div>
+            <div class="w-full overflow-hidden">
+                <div class="w-full overflow-hidden">
+                    <div class="bg-about-us bg-cover bg-center h-[30rem] max-xl:h-[22rem] max-lg:h-[70%] max-sm:h-[55%]">
+                        <div class="text-center text-white text-[3rem] font-medium">
+                            <h1 class="pt-[12rem] max-xl:pt-[9.5rem]">About Us</h1>
+                        </div>
+                    </div> 
+                <div class="mt-[-6.5rem] max-2xl:mt-[-5rem] max-xl:mt-[-4rem] max-lg:mt-[-3rem] max-sm:mt-[-1.35rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,  63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="w-80% overflow-hidden max-sm:h-[20rem] bg-white">
+                <div class="box-border">
+                    <div class="flex justify-center items-center mt-[5rem] gap-[2rem] h-[40rem] max-xl:mt-[2rem] max-lg:mt-[0.5rem] max-lg:h-[30rem]">
+                        <div class="relative">
+                            <div class="w-[5.5rem] h-[5.5rem] bg-primary rounded-[50%] absolute left-[38rem] z-[1] rotate-[-15deg] max-2xl:left-[32.05rem] max-xl:w-[4.5rem] max-xl:h-[4.5rem] max-xl:left-[19rem] max-lg:hidden">
+                                <h1 class="text-center text-white font-medium mt-[1.2rem] max-xl:text-[0.9rem] max-xl:mt-[0.85rem]">Since <br> 2005</h1>
+                            </div>
+                            <div class="w-[5rem] h-[5rem] border-2 border-white rounded-[50%] absolute left-[38.3rem] top-[0.25rem] z-[2] max-2xl:left-[32.3rem] max-xl:w-[4rem] max-xl:h-[4rem] max-xl:left-[19.25rem] max-lg:hidden"></div>
+                            <img src="/assets/images/manager.jpg" class="rounded-[40%] w-[25rem] h-[30rem] ml-[20rem] max-2xl:ml-[15rem] max-xl:w-[20rem] max-xl:h-[25rem] max-xl:ml-[4rem] max-lg:hidden">
+                            <div class="w-[23rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[21rem] max-2xl:left-[16rem] max-xl:w-[18rem] max-xl:h-[23rem] max-xl:left-[5rem] max-lg:hidden"></div>
+                            <div class="text-primary max-lg:hidden">
+                                <i class="fa-solid fa-star-of-life text-[4rem] absolute left-[21.5rem] top-[23.5rem] max-2xl:left-[16.5rem] max-xl:text-[3.5rem] max-xl:top-[19.5rem] max-xl:left-[5rem]"></i>
+                                <i class="fa-solid fa-star-of-life text-[2rem] absolute left-[18.5rem] top-[22rem] max-2xl:left-[13.5rem] max-xl:text-[1.5rem] max-xl:top-[18.5rem] max-xl:left-[3rem]"></i>
+                                <i class="fa-solid fa-star-of-life absolute left-[19.5rem] top-[26rem] max-2xl:left-[14.5rem] max-xl:text-[0.8rem] max-xl:top-[21.5rem] max-xl:left-[3.5rem]"></i>
+                            </div>
+                        </div>
+                        <div class="w-[40rem] text-justify mr-[20rem] max-2xl:mr-[10rem] max-xl:mr-[2rem] max-xl:w-[30rem] max-lg:text-center max-lg-[20rem] max-sm:mt-[-11rem]">
+                            <div class="text-primary pb-[1.5rem] max-xl:pb-[0.4rem]">
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                                <i class="fa-solid fa-diamond max-sm:text-[0.8rem] max-2xs:text-[0.6rem]"></i>
+                            </div>
+                            <div class="text-primary">
+                                <h1 class="text-[1.1rem] font-medium pb-[1rem] max-xl:pb-[0.2rem] max-xl:text-[1rem] max-sm:text-[0.8rem] max-2xs:text-[0.6rem]">ABOUT US</h1>
+                            </div>
+                            <div class="text-[2rem] font-semibold max-xl:text-[1.7rem] max-sm:text-[1.2rem] max-2xs:text-[1rem]">
+                                <h1>A Culinary Exprience of <br> <span class="text-primary">Elegance and Excellence</span></h1>
+                            </div>
+                            <div class="pt-[1rem] text-gray-400 max-xl:pt-[0.2rem] max-xl:text-[0.9rem] max-sm:text-[0.7rem] max-2xs:text-[0.6rem]">
+                                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt, magni numquam? Pariatur unde aliquid aspernatur libero ipsam sunt, ratione sint nisi iure repellat inventore tempora autem ab eveniet vitae totam.</p>
+                            </div>
+                            <div class="flex justify-between items-center pt-[1.5rem] max-sm:pt-[1rem] max-2xs:pt-[0.5rem]">
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">5-Star</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Dining Experience</p>
+                                </div>
+                                <div class="border-r-1 border-gray-200 h-[5rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">150,000+</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Happy Guests</p>
+                                </div>
+                                <div class="border-r-1 border-gray-200 h-[5rem] max-sm:h-[3rem] max-2xs:h-[2rem]"></div>
+                                <div>
+                                    <h1 class="text-[1.5rem] font-bold pb-[0.5rem] text-primary max-sm:text-[1rem] max-sm:pb-[0.2rem] max-2xs:text-[0.8rem]">99%</h1>
+                                    <p class="text-[0.8rem] text-gray-400 font-medium max-sm:text-[0.65rem] max-2xs:text-[0.5rem]">Guest Satisfaction</p>
+                                </div>
+                            </div>
+                            <div class="mt-[1.5rem] max-sm:mt-[0.8rem]">
+                                <h1 class="text-[1.5rem] font-bold max-sm:text-[1rem] max-2xs:text-[0.8rem]">Manang G</h1>
+                                <p class="text-[0.9rem] text-gray-400 font-sm max-sm:text-[0.7rem] max-2xs:text-[0.6rem]">Manang G <span class="text-primary">•</span> Owner</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-secondary h-[90rem] mb-[10rem] overflow-hidden max-xl:h-[70rem] max-sm:h-[40rem] max-xs:h-[35rem]">
+                <div class="relative">
+                    <div class="rotate-[180deg] mt-[-0.5rem]">
+                        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                    </div>
+                    <div>
+                        <div class="flex justify-center items-center gap-[2rem] mt-[10rem]">
+                            <div class="bg-primary w-[37rem] h-[12.5rem] rounded-[1.5rem] relative overflow-hidden">
+                                <div class="absolute right-[-0.5rem] top-[-1rem]">
+                                    <i class="fa-solid fa-rocket text-white/40 text-[5.8rem] pt-[0.9rem]"></i>
+                                </div>
+                                <div class="flex items-center gap-[1rem] ml-[1.5rem] mt-[1.5rem]">
+                                    <div class="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-secondary/70 text-center">
+                                        <i class="fa-solid fa-rocket text-white text-[1.8rem] pt-[0.9rem]"></i>
+                                    </div>
+                                    <div>
+                                        <h1 class="text-white text-[1.5rem] font-medium">Our Vision</h1>
+                                    </div>
+                                </div>
+                                <div class="ml-[1.5rem] mt-[1rem]">
+                                    <p class="text-white">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic, totam tempora? Iure, sapiente odit quae cupiditate, in voluptate perferendis magnam minima exercitationem natus error optio. Quam magni ullam ad est!</p>
+                                </div>
+                            </div>
+                            <div class="bg-red-200 w-[37rem] h-[12.5rem] rounded-[1.5rem]">
+                                <div class="bg-white w-[37rem] h-[12.5rem] rounded-[1.5rem] relative overflow-hidden">
+                                    <div class="absolute right-[-0.5rem] top-[-1rem]">
+                                        <i class="fa-solid fa-eye text-gray-100 text-[5.8rem] pt-[0.9rem]"></i>
+                                    </div>
+                                    <div class="flex items-center gap-[1rem] ml-[1.5rem] mt-[1.5rem]">
+                                        <div class="w-[3.5rem] h-[3.5rem] rounded-[50%] bg-primary text-center">
+                                            <i class="fa-solid fa-eye text-white text-[1.8rem] pt-[0.9rem]"></i>
+                                        </div>
+                                        <div>
+                                            <h1 class="text-gray-600 text-[1.5rem] font-medium">Our Mission</h1>
+                                        </div>
+                                    </div>
+                                    <div class="ml-[1.5rem] mt-[1rem]">
+                                        <p class="text-gray-600">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Recusandae vitae et dignissimos consequuntur nesciunt culpa laborum quidem repellat? Soluta aliquid animi suscipit alias voluptatum odit! Tempore laboriosam.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="ml-[21.5rem] mt-[5rem]">
+                            <img class="w-[76rem] h-[40rem] rounded-[1.5rem] object-obtain" src="../assets/images/about us pic.webp">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="w-[78%] h-[13rem] bg-tertiary ml-[22%] absolute bottom-[-6.5rem] rounded-l-[1.5rem]">
+                            <div class="flex justify-evenly">
+                                <div class="mt-[3rem]">
+                                    <h1 class="text-primary text-[2.5rem]">150+</h1>
+                                    <h4 class="text-white text-[1.5rem]">Team Members</h4>
+                                </div>
+                                <div class="h-[8rem] border-l-2 border-l-gray-100/20 mt-[2.2rem]"></div>
+                                <div class="mt-[3rem]">
+                                    <h1 class="text-primary text-[2.5rem]">60,000+</h1>
+                                    <h4 class="text-white text-[1.5rem]">Happy Guests</h4>
+                                </div>
+                                <div class="h-[8rem] border-l-2 border-l-gray-100/20 mt-[2.2rem]"></div>
+                                <div class="mt-[3rem]">
+                                    <h1 class="text-primary text-[2.5rem]">99%</h1>
+                                    <h4 class="text-white text-[1.5rem]">Guest Satisfaction</h4>
+                                </div>
+                                <div class="h-[8rem] border-l-2 border-l-gray-100/20 mt-[2.2rem]"></div>
+                                <div class="mt-[3rem]">
+                                    <h1 class="text-primary text-[2.5rem]">18+</h1>
+                                    <h4 class="text-white text-[1.5rem]">Years Experience</h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="h-[70rem] overflow-hidden max-lg:h-[80rem] max-sm:h-[60rem] max-2xs:h-[50rem]">
+                <div class="pt-[8rem] text-center text-primary pb-[1rem] max-2xl:pt-[4rem] max-sm:pt-[2rem] max-sm:pb-[0.5rem]">
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i>
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i>
+                    <i class="fa-solid fa-diamond max-sm:text-[0.9rem] max-2xs:text-[0.7rem]"></i> 
+                </div>
+                <div class="text-center text-primary">
+                    <h1 class="text-[1.2rem] font-medium pb-[0.5rem] max-sm:pb-[0.2rem] max-2xs:text-[0.95rem]">WHY CHOOSE US</h1>
+                </div>
+                <div class="text-center font-semibold">
+                    <h1 class="text-[2.5rem] max-sm:text-[2rem] max-2xs:text-[1.5rem]">Why <span class="text-primary">Dine With Us?</span></h1>
+                </div>
+                <div class="flex justify-center items-center box-border gap-[1.5rem] mt-[3rem] max-lg:flex-col max-sm:mt-[2rem] max-2xs:mt-[1.5rem]">
+                    <div class="relative w-[23%] max-2xl:w-[25%] max-xl:w-[37.5%] max-lg:w-[50%] max-sm:w-[80%]">
+                        <img src="/assets/images/why choose us 2.avif" class="w-[30rem] h-[30rem] rounded-[40%] object-cover max-sm:h-[25rem] max-2xs:h-[20rem]">
+                        <div class="w-[25.5rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[1rem] max-2xl:w-[22.5rem] max-2xl:h-[27.9rem] max-2xl:left-[0.8rem] max-sm:h-[23rem] max-sm:w-[19.75rem] max-xs:w-[17.3rem] max-2xs:h-[18.8rem] max-2xs:w-[14.95rem] max-2xs:top-[0.6rem] max-2xs:left-[0.5rem]"></div>
+                        <div class="w-[17rem] h-[6rem] bg-primary rounded-[1.2rem] border-5 border-white absolute top-[25.5rem] left-[5.3rem] max-2xl:left-[3.8rem] max-sm:w-[14rem] max-sm:h-[5rem] max-sm:top-[21rem] max-sm:left-[4rem] max-sm:top-[19rem] max-xs:w-[13rem] max-xs:left-[3.2rem] max-2xs:w-[12rem] max-2xs:h-[4rem] max-2xs:top-[16rem] max-2xs:left-[2rem]">
+                            <div class="relative">
+                                <div>
+                                    <img src="/assets/images/pp 1.jpg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[1.5rem] max-sm:left-[0.8rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[0.6rem] max-2xs:left-[0.5rem] max-2xs:top-[0.45rem]">
+                                    <img src="/assets/images/pp 2.jpg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[3rem] max-sm:left-[2.3rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[2.1rem] max-2xs:left-[2rem] max-2xs:top-[0.45rem]">
+                                    <img src="/assets/images/pp 3.jpeg" class="w-[3rem] h-[3rem] rounded-[50%] border-3 border-white absolute top-[1rem] left-[4.5rem] max-sm:left-[3.8rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[3.6rem] max-2xs:left-[3.5rem] max-2xs:top-[0.45rem]">
+                                </div>
+                                <div class="w-[3rem] h-[3rem] bg-black rounded-[50%] border-3 border-white text-center absolute top-[1rem] left-[6rem] max-sm:left-[5.3rem] max-sm:top-[0.65rem] max-2xs:w-[2.5rem] max-2xs:h-[2.5rem] max-xs:left-[5.1rem] max-2xs:left-[5rem] max-2xs:top-[0.45rem]">
+                                    <i class="fa-solid fa-plus text-primary text-[1.2rem] mt-[0.7rem] max-2xs:mt-[0.5rem]"></i>
+                                </div>
+                                <div class="absolute top-[1rem] left-[10.5rem] max-sm:left-[8.9rem] max-sm:top-[0.65rem] max-xs:left-[8.5rem] max-2xs:left-[8rem]">
+                                    <h1 class="text-[1.2rem] font-medium text-white max-sm:text-[1rem] max-2xs:text-[0.8rem]">4.9 Star</h1>
+                                    <span class="text-[0.8rem] text-gray-200 max-2xs:text-[0.65rem]">Reviews</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="w-[14%] relative ml-[rem] max-2xl:w-[17%] box-border max-xl:hidden">
+                        <div>
+                            <img src="/assets/images/why choose us 1.avif" class="w-[30rem] h-[30rem] rounded-[40%] object-cover">
+                            <div class="w-[15.2rem] h-[28rem] border-3 border-white rounded-[40%] absolute top-[1rem] left-[0.75rem] max-2xl:w-[14.8rem]"></div>
+                        </div>
+                    </div>
+                    <div class="flex flex-col w-[30%] max-2xl:w-[33%] max-xl:w-[46%] max-lg:w-[70%] max-xl:mt-[1.5rem] max-sm:w-[85%] max-sm:mt-[0] max-2xs:mt-[-1rem]">
+                        <div class="text-start max-sm:text-center">
+                            <p class="pb-[1rem] text-gray-500 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium est illo commodi perspiciatis placeat quaerat! Eligendi deleniti officiis laborum,</p>
+                        </div>
+                        <hr class="border-t-1 border-t-solid border-gray-300">
+                        <div class="flex justify-evenly items-center">
+                            <div>
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">20+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Expert Chefs</p>
+                            </div>
+                            <div class="border-r-1 border-r-gray-300 h-[5rem] mt-[2rem] mb-[2rem] max-sm:h-[3.5rem] max-sm:mt-[1rem] max-sm:mb-[1rem] max-2xs:h-[3rem]"></div>
+                            <div>
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">125+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Seating Options</p>
+                            </div>
+                            <div class="border-r-1 border-r-gray-300 h-[5rem] mt-[2rem] mb-[2rem] max-sm:h-[3.5rem] max-sm:mt-[1rem] max-sm:mb-[1rem] max-2xs:h-[3rem]"></div>
+                            <div class="mr-[2rem]">
+                                <h1 class="text-primary text-[2.5rem] font-semibold max-sm:text-[1.5rem] max-2xs:text-[1.3rem]">60+</h1>
+                                <p class="text-gray-400 max-sm:text-[0.8rem] max-2xs:text-[0.7rem]">Awards</p>
+                            </div>
+                        </div>
+                        <hr class="border-t-1 border-t-solid border-gray-300">
+                        <div class="mt-[2rem] max-sm:mt-[1rem]">
+                            <div class="flex justify-start items-center gap-4 max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Luxorious AC Dining & Comfortable Seating</h1>
+                            </div>
+                            <div class="flex justify-start items-center gap-4 mt-[0.5rem] max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Unrivaled Service, Remarkable Experience</h1>
+                            </div>
+                            <div class="flex justify-start items-center gap-4 mt-[0.5rem] max-sm:gap-2">
+                                <i class="fa-solid fa-circle-check text-[1.7rem] text-primary max-sm:text-[1rem]"></i>
+                                <h1 class="text-[1.2rem] text-gray-400 max-sm:text-[0.9rem] max-2xs:text-[0.75rem]">Where Comfort Meets Exquisite Cuisine</h1>
+                            </div>
+                        </div>
+                        <div class="w-[10rem] h-[2.5rem] bg-primary mt-[2rem] rounded-[1.5rem] text-center cursor-pointer hover:bg-tertiary/80 max-lg:ml-[35%] max-sm:w-[7rem] max-sm:h-[1.5rem] max-sm:mt-[1rem] max-xs:ml-[34%] max-2xs:w-[6rem]">
+                            <button class="text-white mt-[0.5rem] font-medium cursor-pointer max-sm:text-[0.8rem] max-sm:mt-[0.15rem] max-2xs:text-[0.75rem]">LEARN MORE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="overflow-hidden">
+                <div class="rotate-[180deg] mb-[-7rem] max-xl:mb-[-4rem] max-lg:mb-[-3rem] max-xs:mb-[-1.5rem] max-2xs:mb-[-1rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(250, 239, 215, 1)" offset="0%"></stop><stop stop-color="rgba(250, 239, 215, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,30L10,38.3C20,47,40,63,60,60C80,57,100,33,120,30C140,27,160,43,180,48.3C200,53,220,47,240,45C260,43,280,47,300,48.3C320,50,340,50,360,56.7C380,63,400,77,420,70C440,63,460,37,480,25C500,13,520,17,540,23.3C560,30,580,40,600,45C620,50,640,50,660,51.7C680,53,700,57,720,48.3C740,40,760,20,780,21.7C800,23,820,47,840,51.7C860,57,880,43,900,43.3C920,43,940,57,960,51.7C980,47,1000,23,1020,15C1040,7,1060,13,1080,26.7C1100,40,1120,60,1140,68.3C1160,77,1180,73,1200,66.7C1220,60,1240,50,1260,53.3C1280,57,1300,73,1320,70C1340,67,1360,43,1380,41.7C1400,40,1420,60,1430,70L1440,80L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+                <div class="bg-[url('/assets/images/testimonials.jpg')] bg-cover h-[70rem] max-xl:h-[65rem] max-lg:h-[80rem] max-sm:h-[70rem] max-xs:h-[67rem]">
+                    <div>
+                        <div class="pt-[17rem] max-xl:pt-[10rem] max-sm:pt-[7rem]">
+                            <div class="text-center text-primary pb-[1rem]">
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i>
+                                <i class="fa-solid fa-diamond"></i> 
+                            </div>
+                            <div class="text-center text-primary">
+                                <h1 class="text-[1.2rem] font-medium pb-[1rem] max-sm:pb-[0.5rem]">TESTIMONIALS</h1>
+                            </div>
+                            <div class="text-center font-semibold">
+                                <h1 class="text-[2.5rem] text-white max-sm:text-[2rem] max-xs:text-[1.5rem]">Testimonials from Our <br><span class="text-primary">Valued Guests</span></h1>
+                            </div>
+                        </div>
+                        <div class="flex justify-center items-center gap-4 mt-[2rem] max-lg:flex-col">
+                            <div class="w-[35rem] h-[22.5rem] backdrop-blur-md bg-white/30 rounded-[1rem] border-1 border-white/20 max-xl:w-[28rem] max-lg:w-[32rem] max-lg:h-[20.5rem] max-sm:w-[22rem] max-sm:h-[18rem] max-xs:w-[20rem] max-xs:h-[17rem] max-2xs:w-[18rem] max-2xs:h-[16.5rem]">
+                                <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                    <div class="text-[1.3rem] text-yellow-500 max-sm:text-[1rem]">
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                        <i class="fa-solid fa-star"></i>
+                                    </div>
+                                    <h1 class="text-[1.3rem] text-white font-medium max-xs:text-[1rem]">5.0</h1>
+                                </div>
+                                <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                    <h1 class="text-[1.5rem] text-white font-medium max-sm:text-[1.2rem] max-2xs:text-[1.1rem]">Exeptional Dining Experience!</h1>
+                                    <p class="text-gray-300 pr-5 mt-[1rem] max-xl:mt-[0.5rem] max-sm:text-[0.8rem] max-xs:mt-[0.2rem] max-2xs:text-[0.75rem] max-xs:pr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas rem recusandae, sed eum similique fugiat officia voluptatem praesentium, enim sapiente dignissimos ipsa expedita nisi soluta. <span class="max-sm:hidden">Praesentium voluptatibus tempore maiores?</span></p>
+                                </div>
+                                <div class="flex items-center gap-3 relative mt-[2rem] ml-[1rem] max-xl:mt-[0.7rem] max-xs:mt-[0.5rem]">
+                                    <img class="w-[4rem] h-[4rem] rounded-[50%] border-1 border-white max-xs:w-[3.5rem] max-xs:h-[3.5rem]" src="/assets/images/pp 1.jpg">
+                                    <div class="w-[3.5rem] h-[3.5rem] border-2 border-white rounded-[50%] absolute top-1 left-[0.25rem]  max-xs:w-[3rem] max-xs:h-[3rem] max-sm:top-[0.25rem] max-2xs:top-[0.3rem]"></div>
+                                    <div class="mt-[0.3rem]">
+                                        <h1 class="text-white text-[1.2rem] max-xs:text-[1rem]">Theresa Webb</h1>
+                                        <p  class="text-gray-200 max-xs:text-[0.8rem]">Happy Guest</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="w-[35rem] h-[22.5rem] backdrop-blur-md bg-white/30 rounded-[1rem] border-1 border-white/20 max-xl:w-[28rem] max-lg:w-[32rem] max-lg:h-[20.5rem] max-sm:w-[22rem] max-sm:h-[18rem] max-xs:w-[20rem] max-xs:h-[17rem] max-2xs:w-[18rem] max-2xs:h-[16.5rem]">
+                                    <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                        <div class="text-[1.3rem] text-yellow-500 max-sm:text-[1rem]">
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                            <i class="fa-solid fa-star"></i>
+                                        </div>
+                                        <h1 class="text-[1.3rem] text-white font-medium max-xs:text-[1rem]">5.0</h1>
+                                    </div>
+                                    <div class="ml-[1rem] mt-[1rem] max-xs:mt-[0.5rem]">
+                                        <h1 class="text-[1.5rem] text-white font-medium max-sm:text-[1.2rem] max-2xs:text-[1.1rem]">Exeptional Dining Experience!</h1>
+                                        <p class="text-gray-300 pr-5 mt-[1rem] max-xl:mt-[0.5rem] max-sm:text-[0.8rem] max-xs:mt-[0.2rem] max-2xs:text-[0.75rem] max-xs:pr-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quas rem recusandae, sed eum similique fugiat officia voluptatem praesentium, enim sapiente dignissimos ipsa expedita nisi soluta.<span class="max-sm:hidden">Praesentium voluptatibus tempore maiores?</span></p>
+                                    </div>
+                                    <div class="flex items-center gap-3 relative mt-[2rem] ml-[1rem] max-xl:mt-[0.7rem] max-xs:mt-[0.5rem]">
+                                        <img class="w-[4rem] h-[4rem] rounded-[50%] border-1 border-white max-xs:w-[3.5rem] max-xs:h-[3.5rem]" src="/assets/images/pp 1.jpg">
+                                        <div class="w-[3.5rem] h-[3.5rem] border-2 border-white rounded-[50%] absolute top-1 left-[0.25rem] max-xs:w-[3rem] max-xs:h-[3rem] max-sm:top-[0.25rem] max-2xs:top-[0.3rem]"></div>
+                                        <div class="mt-[0.3rem]">
+                                            <h1 class="text-white text-[1.2rem] max-xs:text-[1rem]">Theresa Webb</h1>
+                                            <p  class="text-gray-200 max-xs:text-[0.8rem]">Happy Guest</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-[-6.5rem]">
+                    <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 100" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(255, 255, 255, 1)" offset="0%"></stop><stop stop-color="rgba(255, 255, 255, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,70L10,65C20,60,40,50,60,40C80,30,100,20,120,26.7C140,33,160,57,180,63.3C200,70,220,60,240,46.7C260,33,280,17,300,20C320,23,340,47,360,46.7C380,47,400,23,420,16.7C440,10,460,20,480,21.7C500,23,520,17,540,23.3C560,30,580,50,600,56.7C620,63,640,57,660,55C680,53,700,57,720,51.7C740,47,760,33,780,35C800,37,820,53,840,50C860,47,880,23,900,25C920,27,940,53,960,63.3C980,73,1000,67,1020,60C1040,53,1060,47,1080,51.7C1100,57,1120,73,1140,75C1160,77,1180,63,1200,61.7C1220,60,1240,70,1260,68.3C1280,67,1300,53,1320,43.3C1340,33,1360,27,1380,23.3C1400,20,1420,20,1430,20L1440,20L1440,100L1430,100C1420,100,1400,100,1380,100C1360,100,1340,100,1320,100C1300,100,1280,100,1260,100C1240,100,1220,100,1200,100C1180,100,1160,100,1140,100C1120,100,1100,100,1080,100C1060,100,1040,100,1020,100C1000,100,980,100,960,100C940,100,920,100,900,100C880,100,860,100,840,100C820,100,800,100,780,100C760,100,740,100,720,100C700,100,680,100,660,100C640,100,620,100,600,100C580,100,560,100,540,100C520,100,500,100,480,100C460,100,440,100,420,100C400,100,380,100,360,100C340,100,320,100,300,100C280,100,260,100,240,100C220,100,200,100,180,100C160,100,140,100,120,100C100,100,80,100,60,100C40,100,20,100,10,100L0,100Z"></path></svg>
+                </div>
+            </div>
+        </section>
+    </div>    
+</body>
+</html>
